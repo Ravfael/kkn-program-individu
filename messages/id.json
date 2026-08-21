@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "brandName": "Kampung Inggris",
+    "subBrand": "Desa Wisata Edukasi KKN",
+    "home": "Beranda",
+    "about": "Tentang",
+    "programs": "Program",
+    "gallery": "Galeri",
+    "contact": "Kontak",
+    "marketplace": "Pasar UMKM",
+    "contactCta": "Hubungi Kami",
+    "selectLanguage": "Pilih Bahasa / Language"
+  },
+  "hero": {
+    "ctaPrimary": "Jelajahi Program",
+    "ctaSecondary": "Profil Desa",
+    "slides": [
+      {
+        "eyebrow": "KKN PROGRAM UNGGULAN 2026",
+        "title": "Selamat Datang di Desa Wisata Edukasi Kampung Inggris",
+        "subtitle": "Mewujudkan generasi muda desa yang percaya diri, fasih berbahasa Inggris, dan berdaya saing global melalui pengabdian masyarakat terpadu.",
+        "ctaPrimaryText": "Jelajahi Program",
+        "ctaSecondaryText": "Profil Desa"
+      },
+      {
+        "eyebrow": "METODE BELAJAR INTERAKTIF",
+        "title": "Pembelajaran Bahasa Inggris Fun & Communicative",
+        "subtitle": "Pengalaman belajar seru dengan metode interaktif, permainan edukatif, serta pendampingan langsung oleh mahasiswa KKN.",
+        "ctaPrimaryText": "Lihat Galeri Kegiatan",
+        "ctaSecondaryText": "Tanya Jawab (FAQ)"
+      },
+      {
+        "eyebrow": "INOVASI & PEMBERDAYAAN LOKAL",
+        "title": "Mendorong Potensi Ekonomi & Digitalisasi Desa",
+        "subtitle": "Kolaborasi mahasiswa dan pemuda desa dalam pengembangan branding media sosial, administrasi digital, dan UMKM lokal.",
+        "ctaPrimaryText": "Hubungi Posko KKN",
+        "ctaSecondaryText": "Jadwal Program"
+      }
+    ]
+  },
+  "brandStory": {
+    "readMore": "Baca Selengkapnya",
+    "badgeTitle": "Pengabdian Masyarakat",
+    "badgeSub": "Kolaborasi Mahasiswa & Warga Desa"
+  },
+  "programsGrid": {
+    "eyebrow": "PROGRAM KKN",
+    "title": "Inisiatif & Program Kerja Unggulan",
+    "subtitle": "Rangkaian program pengabdian masyarakat yang dirancang secara komprehensif untuk meningkatkan literasi bahasa Inggris, kesehatan, dan potensi ekonomi digital warga desa.",
+    "featuredBadge": "Program Utama",
+    "applyCta": "Daftar Program",
+    "detailCta": "Detail"
+  },
+  "timeline": {
+    "eyebrow": "PERJALANAN PROGRAM",
+    "title": "Tahapan & Keberjalanan Program KKN",
+    "subtitle": "Perjalanan program pengabdian masyarakat dirancang secara terstruktur melalui 5 tahapan utama untuk menjamin keberlanjutan dampak positif bagi warga desa.",
+    "scrollHint": "Geser untuk melihat linimasa kegiatan",
+    "statusCompleted": "Selesai",
+    "statusInProgress": "Sedang Berjalan",
+    "statusUpcoming": "Mendatang"
+  },
+  "newsSection": {
+    "eyebrow": "KABAR TERBARU",
+    "title": "Berita & Dampak Kegiatan Desa",
+    "subtitle": "Ikuti perkembangan terbaru pelaksanaan program pengabdian KKN, dokumentasi belajar mengajar, serta cerita inspiratif dari warga desa.",
+    "viewAll": "Lihat Semua Berita",
+    "readStory": "Baca Cerita"
+  },
+  "gallery": {
+    "eyebrow": "DOKUMENTASI",
+    "title": "Galeri Foto & Kegiatan Desa",
+    "subtitle": "Momen kebersamaan masyarakat desa, siswa Kampung Inggris, dan mahasiswa KKN yang terekam dalam berbagai aktivitas edukasi dan pengabdian.",
+    "viewAll": "Lihat Semua Foto"
+  },
+  "faqAccordion": {
+    "eyebrow": "TANYA JAWAB",
+    "title": "Pertanyaan Yang Sering Diajukan",
+    "subtitle": "Informasi penting seputar pendaftaran, jadwal, lokasi posko, dan pelaksanaan kegiatan Kampung Inggris KKN.",
+    "contactPromptTitle": "Masih ada pertanyaan yang belum terjawab?",
+    "contactPromptSub": "Tim posko KKN kami siap membantu dan memberikan informasi lebih rinci.",
+    "contactBtn": "Hubungi Tim KKN"
+  },
+  "contactSection": {
+    "eyebrow": "HUBUNGI KAMI",
+    "title": "Hubungi Kami & Kunjungi Posko KKN",
+    "subtitle": "Tim mahasiswa KKN dan pengurus posko desa siap melayani pertanyaan, pendaftaran kelas, maupun tawaran kemitraan program.",
+    "addressTitle": "Alamat Posko",
+    "phoneTitle": "Telepon / WhatsApp",
+    "emailTitle": "Email Resmi",
+    "hoursTitle": "Jam Operasional Posko",
+    "fastResponseTitle": "Respons Cepat",
+    "fastResponseQuestion": "Butuh bantuan segera?",
+    "fastResponseDesc": "Layanan pesan WhatsApp tim posko siap membalas pertanyaan Anda dengan cepat.",
+    "whatsappBtn": "Hubungi WhatsApp Posko"
+  },
+  "footer": {
+    "contactTitle": "Kontak Posko",
+    "programTitle": "Program",
+    "infoTitle": "Informasi",
+    "timelineLink": "Linimasa Kegiatan",
+    "newsLink": "Kabar & Berita",
+    "faqLink": "Tanya Jawab (FAQ)",
+    "locationLink": "Lokasi & Kontak Posko",
+    "copyright": "Hak Cipta Dilindungi.",
+    "credit": "Dibuat oleh Tim Mahasiswa KKN Universitas"
+  }
+}

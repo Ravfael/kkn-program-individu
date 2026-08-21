@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "brandName": "Kampung Inggris",
+    "subBrand": "Educational Tourism Village KKN",
+    "home": "Home",
+    "about": "About Us",
+    "programs": "Programs",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "marketplace": "UMKM Market",
+    "contactCta": "Contact Us",
+    "selectLanguage": "Select Language"
+  },
+  "hero": {
+    "ctaPrimary": "Explore Programs",
+    "ctaSecondary": "Village Profile",
+    "slides": [
+      {
+        "eyebrow": "FLAGSHIP KKN PROGRAM 2026",
+        "title": "Welcome to Kampung Inggris Educational Tourism Village",
+        "subtitle": "Empowering confident, fluent, and globally competitive local youth through integrated community service initiatives.",
+        "ctaPrimaryText": "Explore Programs",
+        "ctaSecondaryText": "Village Profile"
+      },
+      {
+        "eyebrow": "INTERACTIVE LEARNING METHODOLOGY",
+        "title": "Fun & Communicative English Learning",
+        "subtitle": "Engaging learning experience featuring interactive games, daily conversation, and direct tutoring by KKN university students.",
+        "ctaPrimaryText": "View Activity Gallery",
+        "ctaSecondaryText": "View FAQ"
+      },
+      {
+        "eyebrow": "INNOVATION & LOCAL EMPOWERMENT",
+        "title": "Fostering Village Economy & Digital Transformation",
+        "subtitle": "Collaboration between students and local youth in social media branding, digital administration, and MSME growth.",
+        "ctaPrimaryText": "Contact KKN Post",
+        "ctaSecondaryText": "Program Timeline"
+      }
+    ]
+  },
+  "brandStory": {
+    "readMore": "Read More",
+    "badgeTitle": "Community Service",
+    "badgeSub": "Collaboration of Students & Village Residents"
+  },
+  "programsGrid": {
+    "eyebrow": "KKN PROGRAMS",
+    "title": "Flagship Work Programs & Initiatives",
+    "subtitle": "Comprehensive community service initiatives designed to boost English literacy, health awareness, and digital economic growth.",
+    "featuredBadge": "Primary Program",
+    "applyCta": "Join Program",
+    "detailCta": "Details"
+  },
+  "timeline": {
+    "eyebrow": "PROGRAM TIMELINE",
+    "title": "KKN Program Phases & Milestones",
+    "subtitle": "Community service journey structured across 5 core phases to ensure long-term positive impact for village residents.",
+    "scrollHint": "Scroll horizontally to view timeline milestones",
+    "statusCompleted": "Completed",
+    "statusInProgress": "In Progress",
+    "statusUpcoming": "Upcoming"
+  },
+  "newsSection": {
+    "eyebrow": "LATEST NEWS",
+    "title": "News & Village Activity Updates",
+    "subtitle": "Stay updated with KKN community service implementation, teaching documentation, and inspiring stories from village residents.",
+    "viewAll": "View All News",
+    "readStory": "Read Story"
+  },
+  "gallery": {
+    "eyebrow": "DOCUMENTATION",
+    "title": "Photo Gallery & Event Memories",
+    "subtitle": "Moments of togetherness among village residents, Kampung Inggris students, and KKN student volunteers.",
+    "viewAll": "View All Photos"
+  },
+  "faqAccordion": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Essential information regarding registration, schedule, location, and program execution.",
+    "contactPromptTitle": "Still have unanswered questions?",
+    "contactPromptSub": "Our KKN post team is ready to assist and provide further details.",
+    "contactBtn": "Contact KKN Team"
+  },
+  "contactSection": {
+    "eyebrow": "CONTACT US",
+    "title": "Get in Touch & Visit KKN Headquarters",
+    "subtitle": "KKN student volunteers and village headquarters managers are ready to assist with inquiries and partnerships.",
+    "addressTitle": "Headquarters Address",
+    "phoneTitle": "Phone / WhatsApp",
+    "emailTitle": "Official Email",
+    "hoursTitle": "Operating Hours",
+    "fastResponseTitle": "Fast Response",
+    "fastResponseQuestion": "Need immediate assistance?",
+    "fastResponseDesc": "Our WhatsApp messaging desk is ready to reply to your questions promptly.",
+    "whatsappBtn": "Contact WhatsApp Headquarters"
+  },
+  "footer": {
+    "contactTitle": "Post Contact",
+    "programTitle": "Programs",
+    "infoTitle": "Information",
+    "timelineLink": "Activity Timeline",
+    "newsLink": "News & Updates",
+    "faqLink": "FAQ",
+    "locationLink": "Location & Contact",
+    "copyright": "All Rights Reserved.",
+    "credit": "Developed by KKN Student Team"
+  }
+}
