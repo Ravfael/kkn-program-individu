@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { GraduationCap, MapPin, Phone, Mail, Globe, MessageCircle, Share2 } from "lucide-react";
 import { villageProfile } from "@/data/village-profile";
@@ -24,8 +25,8 @@ export async function Footer({ locale = "id" }: { locale?: string }) {
               href="#hero"
               className="flex items-center gap-2.5 w-fit group focus:outline-hidden"
             >
-              <div className="w-10 h-10 rounded-xl bg-primary-navy flex items-center justify-center text-accent-gold shadow-xs">
-                <GraduationCap className="w-6 h-6" />
+              <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-xs overflow-hidden shrink-0">
+                <Image src="/images/village/logo.webp" alt="Logo Desa" width={40} height={40} className="w-full h-full object-contain p-0.5" />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg sm:text-xl text-primary-navy leading-tight tracking-tight">

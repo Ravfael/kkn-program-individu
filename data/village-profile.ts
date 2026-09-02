@@ -16,7 +16,7 @@ export interface SocialLink {
   url: string;
 }
 
-export interface WelcomeMessageDetails {
+export interface CommunityFigure {
   eyebrow: LocalizedString;
   heading: LocalizedString;
   paragraph: LocalizedString;
@@ -26,6 +26,9 @@ export interface WelcomeMessageDetails {
   photo: string;
 }
 
+/** @deprecated Use communityFigures array instead */
+export type WelcomeMessageDetails = CommunityFigure;
+
 export interface VillageProfile {
   name: LocalizedString;
   subdistrict: LocalizedString;
@@ -33,7 +36,9 @@ export interface VillageProfile {
   province: LocalizedString;
   tagline: LocalizedString;
   heroImages: string[];
-  welcomeMessage: WelcomeMessageDetails;
+  /** @deprecated Use communityFigures */
+  welcomeMessage: CommunityFigure;
+  communityFigures: CommunityFigure[];
   historyBrief: LocalizedString;
   locationMapUrl: string;
   contact: ContactInfo;
@@ -61,11 +66,7 @@ export const villageProfile: VillageProfile = {
     id: "Membangun Generasi Cakap Berbahasa Inggris & Berdaya Saing Global",
     en: "Empowering Youth with English Proficiency & Global Competitiveness",
   },
-  heroImages: [
-    "https://picsum.photos/1200/600?random=1",
-    "https://picsum.photos/1200/600?random=2",
-    "https://picsum.photos/1200/600?random=3",
-  ],
+  heroImages: ["/images/hero/1.jpeg", "/images/hero/2.jpeg", "/images/hero/3.jpeg"],
   welcomeMessage: {
     eyebrow: {
       id: "SAMBUTAN KEPALA DESA",
@@ -93,6 +94,62 @@ export const villageProfile: VillageProfile = {
     },
     photo: "https://picsum.photos/600/750?random=105",
   },
+  communityFigures: [
+    {
+      eyebrow: {
+        id: "SAMBUTAN KETUA RT",
+        en: "RT LEADER WELCOME",
+      },
+      heading: {
+        id: "Bersama Memajukan Dusun",
+        en: "Building the Hamlet Together",
+      },
+      paragraph: {
+        id: "Sebagai Ketua RT, saya sangat mendukung program Kampung Inggris yang diinisiasi oleh mahasiswa KKN. Kehadiran mereka membawa semangat baru bagi warga, khususnya generasi muda dusun kami, untuk belajar dan berkembang.",
+        en: "As the RT Leader, I fully support the Kampung Inggris program initiated by KKN students. Their presence brings a fresh spirit for residents, especially our young generation, to learn and grow.",
+      },
+      quote: {
+        id: "Saya bangga melihat anak-anak dusun kami semangat belajar bahasa Inggris. Ini adalah investasi terbaik untuk masa depan mereka.",
+        en: "I am proud to see the children of our hamlet enthusiastically learning English. This is the best investment for their future.",
+      },
+      authorName: {
+        id: "Bpk. [Nama RT 1]",
+        en: "Mr. [RT 1 Name]",
+      },
+      authorTitle: {
+        id: "Ketua RT 01, Dusun Candisari",
+        en: "RT 01 Leader, Candisari Hamlet",
+      },
+      photo: "https://picsum.photos/600/750?random=106",
+    },
+    {
+      eyebrow: {
+        id: "SAMBUTAN KETUA RT",
+        en: "RT LEADER WELCOME",
+      },
+      heading: {
+        id: "Sinergi Warga & Mahasiswa",
+        en: "Synergy of Residents & Students",
+      },
+      paragraph: {
+        id: "Program KKN ini adalah contoh nyata bagaimana kolaborasi antara mahasiswa dan warga desa mampu menciptakan perubahan positif yang nyata. Kami sangat mengapresiasi dedikasi para mahasiswa dalam membantu warga kami.",
+        en: "This KKN program is a real example of how collaboration between students and village residents can create tangible positive change. We greatly appreciate the dedication of the students in helping our community.",
+      },
+      quote: {
+        id: "Kehadiran mahasiswa KKN benar-benar membawa angin segar. Warga kami jadi lebih semangat dan dusun kami pun semakin dikenal.",
+        en: "The presence of KKN students truly brought a fresh breeze. Our residents are more enthusiastic and our hamlet is increasingly well-known.",
+      },
+      authorName: {
+        id: "Bpk. [Nama RT 2]",
+        en: "Mr. [RT 2 Name]",
+      },
+      authorTitle: {
+        id: "Ketua RT 02, Dusun Candisari",
+        en: "RT 02 Leader, Candisari Hamlet",
+      },
+      photo: "https://picsum.photos/600/750?random=107",
+    },
+  ],
   historyBrief: {
     id: "Program KKN ini diinisiasi oleh mahasiswa universitas bersama perangkat desa setempat untuk memperkuat potensi edukasi masyarakat.",
     en: "This KKN initiative was established by university students and village leaders to enhance local community educational potential.",

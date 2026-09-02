@@ -22,6 +22,7 @@ export default function MarketplaceLayout({
   return (
     <div
       className={`${poppins.variable} font-poppins min-h-screen bg-market-bg text-slate-800 antialiased selection:bg-market-primary selection:text-white flex flex-col`}
+      suppressHydrationWarning
     >
       <main className="flex-1">{children}</main>
       <MarketplaceFooter />

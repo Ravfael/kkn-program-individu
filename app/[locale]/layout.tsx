@@ -87,6 +87,11 @@ export async function generateMetadata({
         "max-snippet": -1,
       },
     },
+    icons: {
+      icon: "/images/village/logo.webp",
+      shortcut: "/images/village/logo.webp",
+      apple: "/images/village/logo.webp",
+    },
   };
 }
 

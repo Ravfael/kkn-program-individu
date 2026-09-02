@@ -23,23 +23,14 @@ export async function Timeline({ locale = "id" }: { locale?: string }) {
           </p>
         </div>
 
-        {/* Scroll Affordance Hint */}
-        <div className="flex items-center justify-between text-xs font-semibold text-text-muted mb-4 px-1">
-          <span className="flex items-center gap-1.5">
-            <Clock className="w-4 h-4 text-primary-blue" />
-            <span>{t("scrollHint")}</span>
-          </span>
-          <span className="hidden sm:inline-block text-[11px] bg-slate-100 px-2.5 py-1 rounded-md text-primary-navy font-mono">
-            CSS Scroll-Snap
-          </span>
-        </div>
 
-        {/* Horizontal Snap Scroll Container */}
-        <div className="w-full overflow-x-auto snap-x snap-mandatory flex gap-6 pb-6 pt-2 no-scrollbar sm:scrollbar-thin sm:scrollbar-thumb-gray-200">
+
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {timelineMilestones.map((item, index) => (
             <div
               key={item.id}
-              className="min-w-[280px] sm:min-w-[320px] lg:min-w-[350px] max-w-[350px] snap-start flex-none bg-bg-muted hover:bg-white rounded-2xl p-6 sm:p-7 border border-gray-100 hover:border-primary-blue/30 shadow-2xs hover:shadow-xl transition-all duration-300 relative flex flex-col justify-between group"
+              className="w-full bg-bg-muted hover:bg-white rounded-2xl p-6 sm:p-7 border border-gray-100 hover:border-primary-blue/30 shadow-2xs hover:shadow-xl transition-all duration-300 relative flex flex-col justify-between group"
             >
               {/* Top Accent Line & Gold Marker Dot */}
               <div className="flex items-center justify-between mb-4">

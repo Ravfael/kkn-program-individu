@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kampung Inggris Educational Tourism Village",
   description: "Desa Wisata Edukasi Kampung Inggris KKN Program",
+  icons: {
+    icon: "/images/village/logo.webp",
+    shortcut: "/images/village/logo.webp",
+    apple: "/images/village/logo.webp",
+  },
 };
 
 export default function RootLayout({
@@ -23,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">
+    <html lang="id" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         {children}
       </body>
     </html>

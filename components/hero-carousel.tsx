@@ -5,12 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { ArrowRight, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -21,14 +16,11 @@ export interface HeroSlide {
   ctaSecondaryHref?: string;
 }
 
-const HERO_IMAGES = [
-  "https://picsum.photos/1600/900?random=101",
-  "https://picsum.photos/1600/900?random=102",
-  "https://picsum.photos/1600/900?random=103",
-];
+const HERO_IMAGES = ["/images/hero/1.jpeg", "/images/gallery/gds4.jpeg", "/images/hero/3.jpeg"];
 
 export function HeroCarousel() {
   const t = useTranslations("hero");
+  type HeroKey = Parameters<typeof t>[0];
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -73,7 +65,7 @@ export function HeroCarousel() {
     (index: number) => {
       api?.scrollTo(index);
     },
-    [api]
+    [api],
   );
 
   const scrollPrev = useCallback(() => {
@@ -120,14 +112,7 @@ export function HeroCarousel() {
             <CarouselItem key={slide.id} className="pl-0 basis-full">
               <div className="relative w-full h-[540px] sm:h-[580px] md:h-[620px] lg:h-[680px] flex items-center">
                 {/* Background Image with Next Image fill */}
-                <Image
-                  src={slide.image}
-                  alt={`Foto banner hero ${index + 1} - ${t(`slides.${index}.title` as any)}`}
-                  fill
-                  priority
-                  sizes="100vw"
-                  className="object-cover object-center"
-                />
+                <Image src={slide.image} alt={`Foto banner hero ${index + 1} - ${t(`slides.${index}.title` as HeroKey)}`} fill priority sizes="100vw" className="object-cover object-center" />
 
                 {/* Dark Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-navy/95 via-primary-navy/80 to-primary-navy/40 md:to-transparent" />
@@ -139,18 +124,14 @@ export function HeroCarousel() {
                     {/* Eyebrow Label */}
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-gold/20 border border-accent-gold/40 text-accent-gold text-xs sm:text-sm font-semibold tracking-wider uppercase backdrop-blur-md w-fit">
                       <Sparkles className="w-3.5 h-3.5" />
-                      <span>{t(`slides.${index}.eyebrow` as any)}</span>
+                      <span>{t(`slides.${index}.eyebrow` as HeroKey)}</span>
                     </div>
 
                     {/* Single Page H1 Heading (SEO-02) */}
-                    <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] tracking-tight">
-                      {t(`slides.${index}.title` as any)}
-                    </h1>
+                    <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] tracking-tight">{t(`slides.${index}.title` as HeroKey)}</h1>
 
                     {/* Subtitle */}
-                    <p className="text-sm sm:text-base md:text-lg text-slate-200 font-normal leading-relaxed max-w-xl">
-                      {t(`slides.${index}.subtitle` as any)}
-                    </p>
+                    <p className="text-sm sm:text-base md:text-lg text-slate-200 font-normal leading-relaxed max-w-xl">{t(`slides.${index}.subtitle` as HeroKey)}</p>
 
                     {/* CTA Buttons */}
                     <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -158,10 +139,10 @@ export function HeroCarousel() {
                         href={slide.ctaPrimaryHref}
                         className={cn(
                           buttonVariants({ variant: "default" }),
-                          "bg-accent-gold hover:bg-yellow-400 text-primary-navy font-bold text-sm sm:text-base px-6 py-3 sm:py-3.5 rounded-xl shadow-lg transition-all duration-200 gap-2 group"
+                          "bg-accent-gold hover:bg-yellow-400 text-primary-navy font-bold text-sm sm:text-base px-6 py-3 sm:py-3.5 rounded-xl shadow-lg transition-all duration-200 gap-2 group",
                         )}
                       >
-                        <span>{t(`slides.${index}.ctaPrimaryText` as any)}</span>
+                        <span>{t(`slides.${index}.ctaPrimaryText` as HeroKey)}</span>
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </Link>
 
@@ -170,10 +151,10 @@ export function HeroCarousel() {
                           href={slide.ctaSecondaryHref}
                           className={cn(
                             buttonVariants({ variant: "outline" }),
-                            "bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-md font-semibold text-sm sm:text-base px-5 py-3 sm:py-3.5 rounded-xl transition-all duration-200"
+                            "bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-md font-semibold text-sm sm:text-base px-5 py-3 sm:py-3.5 rounded-xl transition-all duration-200",
                           )}
                         >
-                          {t(`slides.${index}.ctaSecondaryText` as any)}
+                          {t(`slides.${index}.ctaSecondaryText` as HeroKey)}
                         </Link>
                       )}
                     </div>
@@ -195,11 +176,7 @@ export function HeroCarousel() {
                 key={index}
                 onClick={() => scrollTo(index)}
                 aria-label={`Go to slide ${index + 1}`}
-                className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                  current === index
-                    ? "w-8 bg-accent-gold shadow-sm"
-                    : "w-2.5 bg-white/40 hover:bg-white/70"
-                }`}
+                className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${current === index ? "w-8 bg-accent-gold shadow-sm" : "w-2.5 bg-white/40 hover:bg-white/70"}`}
               />
             ))}
           </div>

@@ -10,46 +10,46 @@ export interface GalleryPhoto {
 export const galleryPhotos: GalleryPhoto[] = [
   {
     id: "photo-1",
-    src: "https://picsum.photos/1000/800?random=201",
+    src: "/images/gallery/gds1.jpg",
     caption: {
-      id: "Pembukaan Resmi Kelas Kampung Inggris KKN bersama Perangkat Desa",
-      en: "Official Opening of Kampung Inggris Classes with Village Leaders",
+      id: "Pembukaan Fasilitas Posyandu Tunas Melati Padukuhan Candikarang",
+      en: "Opening of the Integrated Health Post (Posyandu) Facility",
     },
     category: {
-      id: "Pembelajaran",
-      en: "Learning",
+      id: "Kesehatan",
+      en: "Healthcare",
     },
   },
   {
     id: "photo-2",
-    src: "https://picsum.photos/800/600?random=202",
+    src: "/images/gallery/gds2.jpg",
     caption: {
-      id: "Pendampingan Foto Produk dan Branding Digital UMKM Warga Desa",
-      en: "Product Photography & MSME Digital Branding Assistance",
+      id: "Senam Sehat Bersama Warga Dusun Candisari",
+      en: "Healthy Exercise with Residents of Candisari Hamlet",
     },
     category: {
-      id: "Ekonomi Digital",
-      en: "Digital Economy",
+      id: "Kesehatan",
+      en: "Healthcare",
     },
   },
   {
     id: "photo-3",
-    src: "https://picsum.photos/800/600?random=203",
+    src: "/images/gallery/gds3.jpg",
     caption: {
-      id: "Perlombaan Kuis Interaktif Bahasa Inggris untuk Siswa Sekolah Dasar",
-      en: "Interactive English Quiz Competition for Elementary School Students",
+      id: "Jalan Sehat Bersama Warga Dusun Candisari Memperingati HUT RI",
+      en: "Community Fun Walk with Residents of Candisari Hamlet to Commemorate Indonesia's Independence Day",
     },
     category: {
-      id: "Edukasi & Lomba",
-      en: "Education & Contest",
+      id: "Kesehatan & Sosial",
+      en: "Health & Community",
     },
   },
   {
     id: "photo-4",
-    src: "https://picsum.photos/800/600?random=204",
+    src: "/images/gallery/g3.jpg",
     caption: {
-      id: "Gotong Royong Mahasiswa KKN & Karang Taruna Merapikan Ruang Belajar",
-      en: "Joint Cleaning & Painting of Learning Hub by Students & Youth Club",
+      id: "Gotong Royong Berama Warga Dalam Rangka HUT RI",
+      en: "Joint Community Work with Residents to Mark Indonesia's Independence Day",
     },
     category: {
       id: "Sosial & Warga",
@@ -58,14 +58,14 @@ export const galleryPhotos: GalleryPhoto[] = [
   },
   {
     id: "photo-5",
-    src: "https://picsum.photos/800/600?random=205",
+    src: "/images/gallery/gds4.jpeg",
     caption: {
-      id: "Penampilan Pidato Bahasa Inggris Anak-Anak Desa pada Acara Penutupan",
-      en: "English Speech Performance by Village Children at Closing Ceremony",
+      id: "Kelas Bahasa Inggris Bersama Mahasiswa KKN",
+      en: "English Class with KKN Students",
     },
     category: {
-      id: "Acara Puncak",
-      en: "Closing Showcase",
+      id: "Edukasi",
+      en: "Education",
     },
   },
 ];

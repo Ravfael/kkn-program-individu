@@ -70,44 +70,4 @@ export const timelineMilestones: TimelineMilestone[] = [
     },
     status: "in-progress",
   },
-  {
-    id: "m-4",
-    date: {
-      id: "Minggu 5",
-      en: "Week 5",
-    },
-    phase: {
-      id: "Tahap 4",
-      en: "Phase 4",
-    },
-    title: {
-      id: "Evaluasi Kemajuan Belajar",
-      en: "Progress Evaluation & Assessment",
-    },
-    description: {
-      id: "Pengukuran peningkatan kosa kata dan keberanian siswa dalam berpidato bahasa Inggris melalui asesmen menyenangkan.",
-      en: "Assessing vocabulary growth and speaking confidence through fun, encouraging student assessments.",
-    },
-    status: "upcoming",
-  },
-  {
-    id: "m-5",
-    date: {
-      id: "Minggu 6",
-      en: "Week 6",
-    },
-    phase: {
-      id: "Tahap 5",
-      en: "Phase 5",
-    },
-    title: {
-      id: "Pentas Seni & Serah Terima Program",
-      en: "Performance Showcase & Handover",
-    },
-    description: {
-      id: "Pertunjukan pentas seni anak-anak desa, pembagian sertifikat, serta penyerahan kurikulum berkelanjutan kepada perangkat desa.",
-      en: "Children performance showcase, certificate presentation, and sustainable curriculum handover to village leaders.",
-    },
-    status: "upcoming",
-  },
 ];

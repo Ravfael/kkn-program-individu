@@ -19,7 +19,7 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   return (
-    <div className="min-h-screen bg-bg-muted flex flex-col font-sans">
+    <div className="min-h-screen bg-bg-muted flex flex-col font-sans" suppressHydrationWarning>
       <Navbar />
       <HeroCarousel />
       <BrandStory />
