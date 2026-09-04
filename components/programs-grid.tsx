@@ -41,7 +41,7 @@ export async function ProgramsGrid({ locale = "id" }: { locale?: string }) {
             <ProgramFeaturedCard 
               program={featuredProgram} 
               lang={lang} 
-              applyCta={t("applyCta")} 
+              detailCta={t("detailCta")} 
               featuredBadge={t("featuredBadge")} 
               whatsappUrl={villageProfile.contact.whatsapp}
             />

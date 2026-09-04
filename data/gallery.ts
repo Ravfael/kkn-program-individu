@@ -68,4 +68,16 @@ export const galleryPhotos: GalleryPhoto[] = [
       en: "Education",
     },
   },
+  {
+    id: "photo-6",
+    src: "/images/gallery/gds5.jpeg",
+    caption: {
+      id: "Permainan Edukatif Berbahasa Inggris Bersama Anak-Anak Desa",
+      en: "Educational English Games with Village Children",
+    },
+    category: {
+      id: "Edukasi",
+      en: "Education",
+    },
+  },
 ];

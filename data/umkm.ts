@@ -13,7 +13,7 @@ export interface Product {
   id: string;
   umkmId: string;
   name: LocalizedString;
-  price: number;
+  price?: number;
   description: LocalizedString;
   image: string;
   category: LocalizedString;
@@ -22,388 +22,188 @@ export interface Product {
 
 export const umkmSellers: UMKMSeller[] = [
   {
-    id: "umkm-1",
+    id: "umkm-kolam-ikan",
     name: {
-      id: "Dapur Olahan Jamur Candisari",
-      en: "Candisari Mushroom Kitchen",
+      id: "Budidaya Kolam Ikan Candisari",
+      en: "Candisari Fish Farm",
     },
     ownerName: {
-      id: "Ibu Nurhayati",
-      en: "Mrs. Nurhayati",
+      id: "Pengelola Kolam Ikan",
+      en: "Fish Farm Manager",
     },
     description: {
-      id: "Spesialis kripik jamur tiram renyah dan olahan jamur organik khas Desa Candisari yang diproduksi secara higienis tanpa bahan pengawet.",
-      en: "Specialist in crispy oyster mushroom chips and organic mushroom products from Candisari Village, produced hygienically without preservatives.",
+      id: "Penyedia ikan segar hasil budidaya kolam air tawar lokal Desa Candisari yang dirawat dengan pakan alami berkualitas.",
+      en: "Provider of fresh freshwater fish cultivated locally in Candisari Village ponds with quality natural feed.",
     },
-    whatsappNumber: "6281234567801",
-    logo: "https://picsum.photos/200/200?random=301",
+    whatsappNumber: "628156886035",
+    logo: "/images/umkm/kolamIkan.jpeg",
   },
   {
-    id: "umkm-2",
+    id: "umkm-cilor",
     name: {
-      id: "Batik Tulis & Cap Candisari",
-      en: "Candisari Handwoven Batik",
+      id: "Jajanan Cilor Candisari",
+      en: "Candisari Cilor Snack",
     },
     ownerName: {
-      id: "Bapak Rahmad Hidayat",
-      en: "Mr. Rahmad Hidayat",
+      id: "Pengusaha Cilor Candisari",
+      en: "Cilor Entrepreneur",
     },
     description: {
-      id: "Kerajinan kain batik motif khas desa dengan pewarna alam ramah lingkungan, dikerjakan oleh para pengrajin wanita berpengalaman.",
-      en: "Handcrafted batik fabrics featuring unique village motifs made with eco-friendly natural dyes by experienced female artisans.",
+      id: "Jajanan khas Cilor (Aci Telur) dengan bumbu aneka rasa yang gurih, lezat, dan hangat disajikan setiap hari.",
+      en: "Popular traditional Cilor (Aci Telur) snack served fresh and warm with savory seasonings daily.",
     },
-    whatsappNumber: "6281234567802",
-    logo: "https://picsum.photos/200/200?random=302",
+    whatsappNumber: "628995138978",
+    logo: "/images/umkm/cilor.jpg",
   },
   {
-    id: "umkm-3",
+    id: "umkm-tiwul",
     name: {
-      id: "Kopi Lereng Candisari",
-      en: "Candisari Slope Coffee",
+      id: "Tiwul Tradisional Candisari",
+      en: "Candisari Traditional Tiwul",
     },
     ownerName: {
-      id: "Mas Joko Prasetyo",
-      en: "Mr. Joko Prasetyo",
+      id: "Pengrajin Tiwul Candisari",
+      en: "Tiwul Artisan",
     },
     description: {
-      id: "Biji kopi Robusta dan Arabika pilihan hasil perkebunan lereng desa yang disangrai dengan profil sangrai sedang berkualitas tinggi.",
-      en: "Premium Robusta and Arabica coffee beans harvested from village slopes, roasted to perfection with medium roast profile.",
+      id: "Olahan tiwul olahan singkong khas desa yang gurih, manis alami, dan dibuat dengan resep warisan tradisional.",
+      en: "Traditional cassava tiwul made with authentic heritage recipes, naturally sweet and savory.",
     },
-    whatsappNumber: "6281234567803",
-    logo: "https://picsum.photos/200/200?random=303",
+    whatsappNumber: "6283121921880",
+    logo: "/images/umkm/tiwul.jpeg",
   },
   {
-    id: "umkm-4",
+    id: "umkm-laundry",
     name: {
-      id: "Kerajinan Bambu & Anyaman Desa",
-      en: "Village Bamboo & Weaving Crafts",
+      id: "Rizkia Laundry",
+      en: "Rizkia Laundry",
     },
     ownerName: {
-      id: "Ibu Mariam",
-      en: "Mrs. Mariam",
+      id: "Pengelola Rizkia Laundry",
+      en: "Rizkia Laundry Owner",
     },
     description: {
-      id: "Aneka kerajinan tangan dari bambu petung lokal seperti tas anyaman, wadah serbaguna, dan lampu hias estetik untuk dekorasi rumah.",
-      en: "Handmade local bamboo crafts including woven bags, multi-purpose containers, and aesthetic decorative lamps for home decor.",
+      id: "Layanan cuci bersih, wangi, dan rapi untuk pakaian harian, selimut, dan kebutuhan laundry warga serta santri.",
+      en: "Clean, fragrant, and neat laundry services for daily clothes, blankets, and fabrics.",
     },
-    whatsappNumber: "6281234567804",
-    logo: "https://picsum.photos/200/200?random=304",
+    whatsappNumber: "6285155392433",
+    logo: "/images/umkm/laundry.jpg",
+  },
+  {
+    id: "umkm-nora-computer",
+    name: {
+      id: "Nora Computer & Service",
+      en: "Nora Computer & Service",
+    },
+    ownerName: {
+      id: "Teknisi Nora Computer",
+      en: "Nora Computer Technician",
+    },
+    description: {
+      id: "Layanan perbaikan, maintenance, instalasi software, dan service laptop/komputer cepat dan terpercaya di Desa Candisari.",
+      en: "Reliable computer & laptop repair, software installation, and IT maintenance services in Candisari Village.",
+    },
+    whatsappNumber: "628175482166",
+    logo: "/images/umkm/nora_computer.jpeg",
   },
 ];
 
 export const products: Product[] = [
-  // UMKM 1 Products
   {
-    id: "prod-101",
-    umkmId: "umkm-1",
+    id: "prod-kolam-ikan",
+    umkmId: "umkm-kolam-ikan",
     name: {
-      id: "Keripik Jamur Tiram Crispy Original 150g",
-      en: "Crispy Original Oyster Mushroom Chips 150g",
+      id: "Ikan Segar Kolam Candisari",
+      en: "Fresh Fish Candisari Pond",
     },
-    price: 18000,
     description: {
-      id: "Keripik jamur tiram segar dengan balutan tepung rempah gurih, renyah tahan lama dan cocok untuk cemilan keluarga.",
-      en: "Fresh oyster mushroom chips coated in savory spiced flour, long-lasting crispiness perfect for family snacking.",
+      id: "Ikan segar langsung dari kolam budidaya warga Desa Candisari",
+      en: "Fresh fish harvested directly from Candisari Village ponds, healthy and high quality.",
     },
-    image: "https://picsum.photos/600/450?random=311",
+    image: "/images/umkm/kolamIkan.jpeg",
+    category: {
+      id: "Perikanan & Pangan",
+      en: "Fisheries & Food",
+    },
+  },
+  {
+    id: "prod-cilor",
+    umkmId: "umkm-cilor",
+    name: {
+      id: "Cilor Gurih & Lezat",
+      en: "Savory & Delicious Cilor (Egg Tapioca)",
+    },
+    description: {
+      id: "Cilor kenyal dan gurih dengan aneka pilihan bumbu tabur sesuai selera",
+      en: "Chewy and savory Cilor with various powdered seasoning options.",
+    },
+    image: "/images/umkm/cilor.jpg",
     category: {
       id: "Makanan & Camilan",
       en: "Food & Snacks",
     },
-    unit: {
-      id: "Bungkus",
-      en: "Pack",
-    },
   },
   {
-    id: "prod-102",
-    umkmId: "umkm-1",
+    id: "prod-tiwul",
+    umkmId: "umkm-tiwul",
     name: {
-      id: "Keripik Jamur Tiram Pedas Manis 150g",
-      en: "Sweet & Spicy Oyster Mushroom Chips 150g",
+      id: "Tiwul Tradisional Khas Desa",
+      en: "Traditional Village Tiwul",
     },
-    price: 20000,
     description: {
-      id: "Varian rasa pedas manis berbumbu cabai asli dan gula merah alami tanpa bahan pengawet sintetis.",
-      en: "Sweet and spicy flavor seasoned with real chili and natural palm sugar without synthetic preservatives.",
+      id: "Tiwul olahan singkong pilihan khas Desa Candisari yang nikmat",
+      en: "Traditional cassava tiwul snack from Candisari Village, delicious and satisfying.",
     },
-    image: "https://picsum.photos/600/450?random=312",
+    image: "/images/umkm/tiwul.jpeg",
     category: {
       id: "Makanan & Camilan",
       en: "Food & Snacks",
     },
-    unit: {
-      id: "Bungkus",
-      en: "Pack",
+  },
+  {
+    id: "prod-laundry",
+    umkmId: "umkm-laundry",
+    name: {
+      id: "Jasa Rizkia Laundry (Cuci & Setrika)",
+      en: "Rizkia Laundry Service (Wash & Iron)",
+    },
+    description: {
+      id: "Layanan cuci pakaian bersih, harum, pengerjaan rapi dan cepat",
+      en: "Fast, fragrant, and clean laundry and ironing service for your daily clothes.",
+    },
+    image: "/images/umkm/laundry.jpg",
+    category: {
+      id: "Jasa & Layanan",
+      en: "Services & Repair",
     },
   },
   {
-    id: "prod-103",
-    umkmId: "umkm-1",
+    id: "prod-nora-computer",
+    umkmId: "umkm-nora-computer",
     name: {
-      id: "Abon Jamur Tiram Gurih 100g",
-      en: "Savory Oyster Mushroom Floss 100g",
+      id: "Service Computer & Laptop Nora Computer",
+      en: "Nora Computer & Laptop Repair Service",
     },
-    price: 25000,
     description: {
-      id: "Abon jamur higienis sebagai lauk praktis tinggi serat dan protein nabati, cocok untuk vegetaris.",
-      en: "Hygienic mushroom floss as a practical high-fiber and plant protein side dish, ideal for vegetarians.",
+      id: "Jasa perbaikan laptop/PC, pembersihan hardware, dan konsultasi komputer",
+      en: "Laptop/PC repair, hardware cleaning, and IT consultation service.",
     },
-    image: "https://picsum.photos/600/450?random=313",
+    image: "/images/umkm/nora_computer.jpeg",
     category: {
-      id: "Makanan & Camilan",
-      en: "Food & Snacks",
-    },
-    unit: {
-      id: "Toples",
-      en: "Jar",
-    },
-  },
-  {
-    id: "prod-104",
-    umkmId: "umkm-1",
-    name: {
-      id: "Kaldu Jamur Organik Bubuk 100g",
-      en: "Organic Mushroom Seasoning Powder 100g",
-    },
-    price: 15000,
-    description: {
-      id: "Penyedap rasa alami dari ekstrak jamur tanpa MSG tambahan untuk masakan sehat keluarga.",
-      en: "Natural seasoning from mushroom extract with no added MSG for healthy family cooking.",
-    },
-    image: "https://picsum.photos/600/450?random=314",
-    category: {
-      id: "Bumbu & Olahan",
-      en: "Seasoning & Mixes",
-    },
-    unit: {
-      id: "Botol",
-      en: "Bottle",
-    },
-  },
-
-  // UMKM 2 Products
-  {
-    id: "prod-201",
-    umkmId: "umkm-2",
-    name: {
-      id: "Kain Batik Tulis Motif Daun Candisari 2m",
-      en: "Handwritten Batik Cloth Candisari Leaf Motif 2m",
-    },
-    price: 250000,
-    description: {
-      id: "Kain katun prima halus bertuliskan tangan dengan pewarna alami mahoni yang elegan dan nyaman dipakai.",
-      en: "Fine prima cotton cloth hand-drawn with elegant mahogany natural dyes, comfortable for daily formal wear.",
-    },
-    image: "https://picsum.photos/600/450?random=321",
-    category: {
-      id: "Pakaian & Batik",
-      en: "Apparel & Batik",
-    },
-    unit: {
-      id: "Lembar",
-      en: "Piece",
-    },
-  },
-  {
-    id: "prod-202",
-    umkmId: "umkm-2",
-    name: {
-      id: "Kemeja Batik Cap Pria Lengan Pendek",
-      en: "Men Short Sleeve Stamped Batik Shirt",
-    },
-    price: 135000,
-    description: {
-      id: "Kemeja batik pria modern berpotongan reguler fit dengan lapisan furing lembut di bagian dalam.",
-      en: "Modern men's batik shirt in regular fit with soft inner lining for maximum comfort.",
-    },
-    image: "https://picsum.photos/600/450?random=322",
-    category: {
-      id: "Pakaian & Batik",
-      en: "Apparel & Batik",
-    },
-    unit: {
-      id: "Pcs",
-      en: "Pcs",
-    },
-  },
-  {
-    id: "prod-203",
-    umkmId: "umkm-2",
-    name: {
-      id: "Selendang Batik Pewarna Alami",
-      en: "Natural Dye Batik Shawl",
-    },
-    price: 95000,
-    description: {
-      id: "Selendang batik sutra halus motif etnik aksen pastel manis untuk aksesori busana formal wanita.",
-      en: "Fine silk batik shawl with ethnic motif and pastel accent for formal women's fashion accessories.",
-    },
-    image: "https://picsum.photos/600/450?random=323",
-    category: {
-      id: "Aksesori & Fashion",
-      en: "Accessories & Fashion",
-    },
-    unit: {
-      id: "Pcs",
-      en: "Pcs",
-    },
-  },
-
-  // UMKM 3 Products
-  {
-    id: "prod-301",
-    umkmId: "umkm-3",
-    name: {
-      id: "Kopi Robusta Candisari Sangrai 250g",
-      en: "Candisari Roasted Robusta Coffee Beans 250g",
-    },
-    price: 45000,
-    description: {
-      id: "Biji kopi Robusta murni dengan aroma nutty dan cokelat mantap, ditanam di ketinggian 800 mdpl.",
-      en: "Pure Robusta coffee beans with intense nutty and chocolate aroma, grown at 800m altitude.",
-    },
-    image: "https://picsum.photos/600/450?random=331",
-    category: {
-      id: "Minuman & Kopi",
-      en: "Beverages & Coffee",
-    },
-    unit: {
-      id: "Bungkus",
-      en: "Pack",
-    },
-  },
-  {
-    id: "prod-302",
-    umkmId: "umkm-3",
-    name: {
-      id: "Kopi Arabika Single Origin Bubuk 200g",
-      en: "Single Origin Ground Arabica Coffee 200g",
-    },
-    price: 65000,
-    description: {
-      id: "Kopi Arabika spesial dengan cita rasa asam buah segar dan tingkat kepahitan yang seimbang.",
-      en: "Specialty Arabica coffee featuring fruity acidity notes and balanced bitterness level.",
-    },
-    image: "https://picsum.photos/600/450?random=332",
-    category: {
-      id: "Minuman & Kopi",
-      en: "Beverages & Coffee",
-    },
-    unit: {
-      id: "Bungkus",
-      en: "Pack",
-    },
-  },
-  {
-    id: "prod-303",
-    umkmId: "umkm-3",
-    name: {
-      id: "Kopi Drip Bag Praktis (Isi 5 Sachet)",
-      en: "Practical Drip Bag Coffee (Pack of 5)",
-    },
-    price: 35000,
-    description: {
-      id: "Kopi drip bag siap seduh tanpa ampas, praktis dibawa saat bepergian atau berkemah.",
-      en: "Ready-to-brew filter drip bags without grounds, convenient for travel and outdoor camping.",
-    },
-    image: "https://picsum.photos/600/450?random=333",
-    category: {
-      id: "Minuman & Kopi",
-      en: "Beverages & Coffee",
-    },
-    unit: {
-      id: "Kotak",
-      en: "Box",
-    },
-  },
-
-  // UMKM 4 Products
-  {
-    id: "prod-401",
-    umkmId: "umkm-4",
-    name: {
-      id: "Tas Anyaman Bambu Estetik Vintage",
-      en: "Vintage Aesthetic Woven Bamboo Bag",
-    },
-    price: 85000,
-    description: {
-      id: "Tas tangan wanita buatan jemari pengrajin lokal dengan bahan bambu pilihan dan tali kulit sintetis.",
-      en: "Women's handbag handwoven by local artisans using selected bamboo and synthetic leather straps.",
-    },
-    image: "https://picsum.photos/600/450?random=341",
-    category: {
-      id: "Kerajinan & Rumah Tangga",
-      en: "Crafts & Household",
-    },
-    unit: {
-      id: "Pcs",
-      en: "Pcs",
-    },
-  },
-  {
-    id: "prod-402",
-    umkmId: "umkm-4",
-    name: {
-      id: "Set Tempat Tisu & Wadah Bambu",
-      en: "Bamboo Tissue Box & Container Set",
-    },
-    price: 55000,
-    description: {
-      id: "Set wadah serbaguna dengan finishing halus tahan rayap untuk hiasan meja makan dan ruang tamu.",
-      en: "Multi-purpose box set with smooth termite-resistant finish for dining and living room decor.",
-    },
-    image: "https://picsum.photos/600/450?random=342",
-    category: {
-      id: "Kerajinan & Rumah Tangga",
-      en: "Crafts & Household",
-    },
-    unit: {
-      id: "Set",
-      en: "Set",
-    },
-  },
-  {
-    id: "prod-403",
-    umkmId: "umkm-4",
-    name: {
-      id: "Kap Lampu Gantung Bambu Anyam Minimalis",
-      en: "Minimalist Woven Bamboo Pendant Lamp Shade",
-    },
-    price: 110000,
-    description: {
-      id: "Kap lampu dekoratif dengan pendar cahaya hangat yang menenangkan untuk interior cafe atau rumah.",
-      en: "Decorative lamp shade casting warm ambient light perfect for cozy home or cafe interiors.",
-    },
-    image: "https://picsum.photos/600/450?random=343",
-    category: {
-      id: "Kerajinan & Rumah Tangga",
-      en: "Crafts & Household",
-    },
-    unit: {
-      id: "Pcs",
-      en: "Pcs",
+      id: "Jasa & Layanan",
+      en: "Services & Repair",
     },
   },
 ];
 
-// Helper to generate WhatsApp click-to-chat URL for ordering a product
-export function getWhatsAppOrderUrl(
-  seller: UMKMSeller,
-  product: Product,
-  lang: "id" | "en" = "id"
-): string {
+// Helper to generate WhatsApp click-to-chat URL for ordering/inquiring a product
+export function getWhatsAppOrderUrl(seller: UMKMSeller, product: Product, lang: "id" | "en" = "id"): string {
   const productName = product.name[lang];
-  const formattedPrice = new Intl.NumberFormat(lang === "en" ? "en-US" : "id-ID", {
-    style: "currency",
-    currency: "IDR",
-    maximumFractionDigits: 0,
-  }).format(product.price);
 
   const message =
     lang === "en"
-      ? `Hello ${seller.ownerName.en} (${seller.name.en}), I would like to order: *${productName}* (${formattedPrice}). Is it currently available? Thank you!`
-      : `Halo ${seller.ownerName.id} (${seller.name.id}), saya berminat memesan produk: *${productName}* (${formattedPrice}). Apakah produk ini masih tersedia? Terima kasih!`;
+      ? `Hello ${seller.name.en}, I am interested in *${productName}* on Candisari Village UMKM Marketplace. Is it available? Thank you!`
+      : `Halo ${seller.name.id}, saya berminat dengan *${productName}* di Pasar UMKM Desa Candisari. Apakah masih tersedia/bisa dipesan? Terima kasih!`;
 
   return `https://wa.me/${seller.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }

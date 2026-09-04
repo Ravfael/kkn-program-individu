@@ -12,63 +12,39 @@ export default function MarketplacePage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredProducts = products.filter((product) => {
-    const matchesCategory =
-      selectedCategory === "Semua" ||
-      product.category.id === selectedCategory ||
-      product.category.en === selectedCategory;
+    const matchesCategory = selectedCategory === "Semua" || product.category.id === selectedCategory || product.category.en === selectedCategory;
 
     const matchesSearch =
-      product.name.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.description.id.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.category.id.toLowerCase().includes(searchQuery.toLowerCase());
+      product.name.id.toLowerCase().includes(searchQuery.toLowerCase()) || product.description.id.toLowerCase().includes(searchQuery.toLowerCase()) || product.category.id.toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesCategory && matchesSearch;
   });
 
-  const formatRupiah = (price: number) => {
-    return new Intl.NumberFormat("id-ID", {
-      style: "currency",
-      currency: "IDR",
-      maximumFractionDigits: 0,
-    }).format(price);
-  };
-
   const generateWhatsAppUrl = (seller: UMKMSeller, product: Product) => {
-    const formattedPrice = formatRupiah(product.price);
-    const message = `Halo, saya tertarik dengan produk *${product.name.id}* seharga *${formattedPrice}* yang saya lihat di Pasar UMKM Desa Candisari. apakah masih ada?`;
+    const message = `Halo, saya tertarik dengan *${product.name.id}* dari *${seller.name.id}* yang saya lihat di Pasar UMKM Desa Candisari. Apakah masih tersedia/bisa dipesan?`;
     return `https://wa.me/${seller.whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
   return (
     <div className="min-h-screen flex flex-col bg-market-bg">
       {/* Marketplace Top Navbar with Interactive State */}
-      <MarketplaceNavbar
-        selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-      />
+      <MarketplaceNavbar selectedCategory={selectedCategory} onSelectCategory={setSelectedCategory} searchQuery={searchQuery} onSearchChange={setSearchQuery} />
 
       {/* Main Content Area */}
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex-1">
-        
         {/* Section Header / Intro Banner */}
         <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-market-primary/10 pb-6">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-market-primary/10 text-market-primary text-xs font-bold uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Etalase Produk Unggulan Desa</span>
+              <span>Etalase Produk & Jasa Desa</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">
-              Produk UMKM Desa Candisari
-            </h1>
-            <p className="text-sm text-slate-600 mt-1 max-w-2xl">
-              Nikmati aneka cemilan jamur organik, kopi sangrai lereng desa, kain batik tulis pewarna alami, serta kerajinan bambu binaan program KKN.
-            </p>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">Produk & Jasa UMKM Desa Candisari</h1>
+            <p className="text-sm text-slate-600 mt-1 max-w-2xl">Jelajahi produk olahan khas, hasil budidaya perikanan, serta jasa layanan lokal dari warga Desa Candisari.</p>
           </div>
 
           <div className="text-xs font-medium text-slate-500 bg-white px-3.5 py-2 rounded-xl border border-market-primary/15 shadow-2xs shrink-0">
-            Menampilkan <span className="font-bold text-market-primary">{filteredProducts.length}</span> dari {products.length} produk
+            Menampilkan <span className="font-bold text-market-primary">{filteredProducts.length}</span> dari {products.length} produk & jasa
           </div>
         </div>
 
@@ -77,7 +53,6 @@ export default function MarketplacePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {filteredProducts.map((product) => {
               const seller = umkmSellers.find((s) => s.id === product.umkmId) || umkmSellers[0];
-              const formattedPrice = formatRupiah(product.price);
               const waUrl = generateWhatsAppUrl(seller, product);
 
               return (
@@ -107,26 +82,10 @@ export default function MarketplacePage() {
                     {/* Product Details */}
                     <div className="p-4 sm:p-5 flex flex-col gap-2">
                       {/* Name */}
-                      <h2 className="text-base font-bold text-slate-800 group-hover:text-market-primary transition-colors leading-snug line-clamp-2">
-                        {product.name.id}
-                      </h2>
+                      <h2 className="text-base font-bold text-slate-800 group-hover:text-market-primary transition-colors leading-snug line-clamp-2">{product.name.id}</h2>
 
                       {/* Description */}
-                      <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
-                        {product.description.id}
-                      </p>
-
-                      {/* Price */}
-                      <div className="mt-2 flex items-baseline justify-between">
-                        <span className="text-lg font-extrabold text-market-primary">
-                          {formattedPrice}
-                        </span>
-                        {product.unit && (
-                          <span className="text-[11px] font-medium text-slate-400">
-                            / {product.unit.id}
-                          </span>
-                        )}
-                      </div>
+                      <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">{product.description.id}</p>
                     </div>
                   </div>
 
@@ -135,21 +94,11 @@ export default function MarketplacePage() {
                     {/* Seller Row */}
                     <div className="pt-3 border-t border-slate-100 flex items-center gap-2.5">
                       <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 border border-market-primary/20">
-                        <Image
-                          src={seller.logo}
-                          alt={seller.name.id}
-                          fill
-                          sizes="28px"
-                          className="object-cover"
-                        />
+                        <Image src={seller.logo} alt={seller.name.id} fill sizes="28px" className="object-cover" />
                       </div>
                       <div className="flex flex-col min-w-0">
-                        <span className="text-xs font-bold text-slate-700 truncate">
-                          {seller.name.id}
-                        </span>
-                        <span className="text-[10px] text-slate-400 truncate">
-                          Pemilik: {seller.ownerName.id}
-                        </span>
+                        <span className="text-xs font-bold text-slate-700 truncate">{seller.name.id}</span>
+                        <span className="text-[10px] text-slate-400 truncate">Pemilik: {seller.ownerName.id}</span>
                       </div>
                     </div>
 
@@ -175,12 +124,8 @@ export default function MarketplacePage() {
               <ShoppingBag className="w-8 h-8" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-slate-800">
-                Tidak ada produk ditemukan
-              </h3>
-              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                Tidak ada produk yang sesuai dengan kata kunci &ldquo;{searchQuery}&rdquo; atau kategori yang dipilih.
-              </p>
+              <h3 className="text-lg font-bold text-slate-800">Tidak ada produk ditemukan</h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">Tidak ada produk yang sesuai dengan kata kunci &ldquo;{searchQuery}&rdquo; atau kategori yang dipilih.</p>
             </div>
             <button
               onClick={() => {
@@ -202,23 +147,15 @@ export default function MarketplacePage() {
               <Store className="w-7 h-7" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-slate-800">
-                Dukung Produk & UMKM Lokal Desa Candisari
-              </h3>
-              <p className="text-xs text-slate-600 mt-1 max-w-xl">
-                Seluruh transaksi dilakukan secara langsung dengan warga pengrajin lokal tanpa perantara. Terima kasih telah mendukung perekonomian mandiri warga desa kami!
-              </p>
+              <h3 className="text-lg font-bold text-slate-800">Dukung Produk & UMKM Lokal Desa Candisari</h3>
+              <p className="text-xs text-slate-600 mt-1 max-w-xl">Seluruh transaksi dilakukan secara langsung dengan warga lokal tanpa perantara. Terima kasih telah mendukung perekonomian mandiri warga desa kami!</p>
             </div>
           </div>
 
-          <Link
-            href="/id#kontak"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-market-secondary text-white font-bold text-xs hover:bg-emerald-800 shadow-xs transition-colors shrink-0"
-          >
+          <Link href="/id#kontak" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-market-secondary text-white font-bold text-xs hover:bg-emerald-800 shadow-xs transition-colors shrink-0">
             <span>Hubungi Posko KKN</span>
           </Link>
         </div>
-
       </div>
     </div>
   );

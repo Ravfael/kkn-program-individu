@@ -61,12 +61,12 @@ export const timelineMilestones: TimelineMilestone[] = [
       en: "Phase 3",
     },
     title: {
-      id: "Pembelajaran & Workshop Intensif",
+      id: "Pembelajaran & Sosialisasi Program",
       en: "Intensive Classes & Workshops",
     },
     description: {
-      id: "Kelas harian percakapan bahasa Inggris, workshop digital branding bagi pelaku UMKM desa, serta latihan public speaking.",
-      en: "Daily English conversation classes, MSME digital branding workshops, and youth public speaking practice.",
+      id: "Kelas harian percakapan bahasa Inggris, sosialisasi program dari para mahasiswa, serta realisasi program unit KKN.",
+      en: "Daily English conversation classes, program outreach by students, and the implementation of Community Service Program (KKN) unit activities.",
     },
     status: "in-progress",
   },

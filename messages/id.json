@@ -16,15 +16,15 @@
     "ctaSecondary": "Profil Desa",
     "slides": [
       {
-        "eyebrow": "KKN PROGRAM UNGGULAN 2026",
-        "title": "Selamat Datang di Desa Wisata Edukasi Kampung Inggris",
-        "subtitle": "Mewujudkan generasi muda desa yang percaya diri, fasih berbahasa Inggris, dan berdaya saing global melalui pengabdian masyarakat terpadu.",
+        "eyebrow": "Lokasi Program Kerja",
+        "title": "Selamat Datang di Kampung Candisari",
+        "subtitle": "Membangun Kampung dari Ekonomi Kreatif serta mewujudkan generasi Kampung yang aktif, kompak, dan berkarakter.",
         "ctaPrimaryText": "Jelajahi Program",
         "ctaSecondaryText": "Profil Desa"
       },
       {
         "eyebrow": "METODE BELAJAR INTERAKTIF",
-        "title": "Pembelajaran Bahasa Inggris Fun & Communicative",
+        "title": "Percobaan Pembelajaran Bahasa Inggris Fun & Communicative",
         "subtitle": "Pengalaman belajar seru dengan metode interaktif, permainan edukatif, serta pendampingan langsung oleh mahasiswa KKN.",
         "ctaPrimaryText": "Lihat Galeri Kegiatan",
         "ctaSecondaryText": "Tanya Jawab (FAQ)"
@@ -49,7 +49,7 @@
     "subtitle": "Rangkaian program pengabdian masyarakat yang dirancang secara komprehensif untuk meningkatkan literasi bahasa Inggris, kesehatan, dan potensi ekonomi digital warga desa.",
     "featuredBadge": "Program Utama",
     "applyCta": "Daftar Program",
-    "detailCta": "Detail"
+    "detailCta": "Detail Program"
   },
   "timeline": {
     "eyebrow": "PERJALANAN PROGRAM",

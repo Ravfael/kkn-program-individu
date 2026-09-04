@@ -101,7 +101,7 @@ export const villageProfile: VillageProfile = {
         en: "RT LEADER WELCOME",
       },
       heading: {
-        id: "Bersama Memajukan Dusun",
+        id: "Bersama Memajukan Kampung",
         en: "Building the Hamlet Together",
       },
       paragraph: {
@@ -109,18 +109,18 @@ export const villageProfile: VillageProfile = {
         en: "As the RT Leader, I fully support the Kampung Inggris program initiated by KKN students. Their presence brings a fresh spirit for residents, especially our young generation, to learn and grow.",
       },
       quote: {
-        id: "Saya bangga melihat anak-anak dusun kami semangat belajar bahasa Inggris. Ini adalah investasi terbaik untuk masa depan mereka.",
-        en: "I am proud to see the children of our hamlet enthusiastically learning English. This is the best investment for their future.",
+        id: "Kehadiran mahasiswa KKN ini sangat bermanfaat bagi Candi Sari, terutama dalam bidang pendidikan Bahasa Inggris, pendampingan promosi dan pemasaran UMKM, serta penguatan ekonomi di wilayah Candi Sari.",
+        en: "The presence of these KKN students is highly beneficial for Candi Sari, particularly in the areas of English language education, support for MSME promotion and marketing, and economic strengthening within the Candi Sari area..",
       },
       authorName: {
-        id: "Bpk. [Nama RT 1]",
-        en: "Mr. [RT 1 Name]",
+        id: "Bpk. Eko",
+        en: "Mr. Eko",
       },
       authorTitle: {
-        id: "Ketua RT 01, Dusun Candisari",
-        en: "RT 01 Leader, Candisari Hamlet",
+        id: "Ketua RT 06, Kampung Candisari",
+        en: "RT 06 Leader, Candisari Hamlet",
       },
-      photo: "https://picsum.photos/600/750?random=106",
+      photo: "/images/village/rt06.jpeg",
     },
     {
       eyebrow: {
@@ -140,12 +140,12 @@ export const villageProfile: VillageProfile = {
         en: "The presence of KKN students truly brought a fresh breeze. Our residents are more enthusiastic and our hamlet is increasingly well-known.",
       },
       authorName: {
-        id: "Bpk. [Nama RT 2]",
-        en: "Mr. [RT 2 Name]",
+        id: "Bpk. [Nama RT 02]",
+        en: "Mr. [RT 02 Name]",
       },
       authorTitle: {
-        id: "Ketua RT 02, Dusun Candisari",
-        en: "RT 02 Leader, Candisari Hamlet",
+        id: "Ketua RT 07, Kampung Candisari",
+        en: "RT 07 Leader, Candisari Hamlet",
       },
       photo: "https://picsum.photos/600/750?random=107",
     },

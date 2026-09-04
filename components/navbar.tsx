@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/routing";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { Menu, Globe, GraduationCap, PhoneCall, ChevronRight, Store, ExternalLink } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -37,11 +36,11 @@ export function Navbar() {
   };
 
   const navItems = [
-    { label: t("home"), href: "#hero" },
-    { label: t("about"), href: "#tentang" },
-    { label: t("programs"), href: "#program" },
-    { label: t("gallery"), href: "#galeri" },
-    { label: t("contact"), href: "#kontak" },
+    { label: t("home"), href: "/#hero" },
+    { label: t("about"), href: "/#tentang" },
+    { label: t("programs"), href: "/#program" },
+    { label: t("gallery"), href: "/#galeri" },
+    { label: t("contact"), href: "/#kontak" },
     {
       label: t("marketplace"),
       href: "/marketplace",
@@ -53,7 +52,7 @@ export function Navbar() {
     <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-xs py-3 border-b border-gray-100" : "bg-white py-4 border-b border-gray-100"}`}>
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo & Name */}
-        <Link href="#hero" className="flex items-center gap-2.5 group focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary-blue rounded-md">
+        <Link href="/#hero" className="flex items-center gap-2.5 group focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary-blue rounded-md">
           <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform duration-200 overflow-hidden shrink-0 border border-gray-100">
             <Image src="/images/village/logo.webp" alt="Logo Desa" width={40} height={40} className="w-full h-full object-contain p-0.5" />
           </div>
