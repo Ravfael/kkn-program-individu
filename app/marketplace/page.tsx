@@ -21,7 +21,7 @@ export default function MarketplacePage() {
   });
 
   const generateWhatsAppUrl = (seller: UMKMSeller, product: Product) => {
-    const message = `Halo, saya tertarik dengan *${product.name.id}* dari *${seller.name.id}* yang saya lihat di Pasar UMKM Desa Candisari. Apakah masih tersedia/bisa dipesan?`;
+    const message = `Halo, saya tertarik dengan *${product.name.id}* dari *${seller.name.id}* yang saya lihat di Pasar UMKM Kampung Candisari. Apakah masih tersedia/bisa dipesan?`;
     return `https://wa.me/${seller.whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
@@ -37,10 +37,10 @@ export default function MarketplacePage() {
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-market-primary/10 text-market-primary text-xs font-bold uppercase tracking-wider mb-2">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Etalase Produk & Jasa Desa</span>
+              <span>Etalase Produk & Jasa Kampung</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">Produk & Jasa UMKM Desa Candisari</h1>
-            <p className="text-sm text-slate-600 mt-1 max-w-2xl">Jelajahi produk olahan khas, hasil budidaya perikanan, serta jasa layanan lokal dari warga Desa Candisari.</p>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-800 tracking-tight">Produk & Jasa UMKM Kampung Candisari</h1>
+            <p className="text-sm text-slate-600 mt-1 max-w-2xl">Jelajahi produk olahan khas, hasil budidaya perikanan, serta jasa layanan lokal dari warga Kampung Candisari.</p>
           </div>
 
           <div className="text-xs font-medium text-slate-500 bg-white px-3.5 py-2 rounded-xl border border-market-primary/15 shadow-2xs shrink-0">
@@ -147,8 +147,8 @@ export default function MarketplacePage() {
               <Store className="w-7 h-7" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-slate-800">Dukung Produk & UMKM Lokal Desa Candisari</h3>
-              <p className="text-xs text-slate-600 mt-1 max-w-xl">Seluruh transaksi dilakukan secara langsung dengan warga lokal tanpa perantara. Terima kasih telah mendukung perekonomian mandiri warga desa kami!</p>
+              <h3 className="text-lg font-bold text-slate-800">Dukung Produk & UMKM Lokal Kampung Candisari</h3>
+              <p className="text-xs text-slate-600 mt-1 max-w-xl">Seluruh transaksi dilakukan secara langsung dengan warga lokal tanpa perantara. Terima kasih telah mendukung perekonomian mandiri warga kampung kami!</p>
             </div>
           </div>
 

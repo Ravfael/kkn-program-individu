@@ -24,7 +24,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     id: "photo-2",
     src: "/images/gallery/gds2.jpg",
     caption: {
-      id: "Senam Sehat Bersama Warga Dusun Candisari",
+      id: "Senam Sehat Bersama Warga Kampung Candisari",
       en: "Healthy Exercise with Residents of Candisari Hamlet",
     },
     category: {
@@ -36,7 +36,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     id: "photo-3",
     src: "/images/gallery/gds3.jpg",
     caption: {
-      id: "Jalan Sehat Bersama Warga Dusun Candisari Memperingati HUT RI",
+      id: "Jalan Sehat Bersama Warga Kampung Candisari Memperingati HUT RI",
       en: "Community Fun Walk with Residents of Candisari Hamlet to Commemorate Indonesia's Independence Day",
     },
     category: {
@@ -48,12 +48,12 @@ export const galleryPhotos: GalleryPhoto[] = [
     id: "photo-4",
     src: "/images/gallery/g3.jpg",
     caption: {
-      id: "Gotong Royong Berama Warga Dalam Rangka HUT RI",
-      en: "Joint Community Work with Residents to Mark Indonesia's Independence Day",
+      id: "Senam Sehat Posbindu",
+      en: "Posbindu Healthy Exercise",
     },
     category: {
-      id: "Sosial & Warga",
-      en: "Community",
+      id: "Kesehatan & Warga",
+      en: "Health & Community",
     },
   },
   {
@@ -72,7 +72,7 @@ export const galleryPhotos: GalleryPhoto[] = [
     id: "photo-6",
     src: "/images/gallery/gds5.jpeg",
     caption: {
-      id: "Permainan Edukatif Berbahasa Inggris Bersama Anak-Anak Desa",
+      id: "Permainan Edukatif Berbahasa Inggris Bersama Anak-Anak Kampung",
       en: "Educational English Games with Village Children",
     },
     category: {

@@ -21,11 +21,11 @@ export const timelineMilestones: TimelineMilestone[] = [
       en: "Phase 1",
     },
     title: {
-      id: "Observasi Awal & Pemetaan Desa",
+      id: "Observasi Awal & Pemetaan Kampung",
       en: "Initial Survey & Village Mapping",
     },
     description: {
-      id: "Pemetaan potensi edukasi desa, silaturahmi dengan tokoh masyarakat, serta pendataan calon peserta didik Kampung Inggris.",
+      id: "Pemetaan potensi edukasi kampung, silaturahmi dengan tokoh masyarakat, serta pendataan calon peserta didik Kampung Inggris.",
       en: "Mapping village education potential, meeting community leaders, and enrolling prospective Kampung Inggris students.",
     },
     status: "completed",

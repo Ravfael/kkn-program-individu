@@ -21,16 +21,16 @@ export const programs: Program[] = [
       en: "Kampung Inggris Unit & Intensive Language Classes",
     },
     description: {
-      id: "Program unggulan pembelajaran bahasa Inggris berbasis komunitas dengan metode percakapan harian, bimbingan belajar interaktif, serta laboratorium bahasa lapangan untuk anak-anak dan pemuda desa.",
+      id: "Program unggulan pembelajaran bahasa Inggris berbasis komunitas dengan metode percakapan harian, bimbingan belajar interaktif, serta laboratorium bahasa lapangan untuk anak-anak dan pemuda kampung.",
       en: "Flagship community-based English learning program featuring daily conversation methods, interactive tutoring, and field language labs for local youth.",
     },
     longDescription: {
-      id: "Program Kampung Inggris Unit dirancang khusus oleh mahasiswa KKN untuk menciptakan ekosistem belajar bahasa Inggris yang komunikatif, inklusif, dan menyenangkan di Desa Candisari. Program ini mencakup modul pembelajaran yang disesuaikan dengan tingkat kemampuan anak-anak hingga remaja desa, menggunakan pendekatan percakapan langsung, permainan edukatif, lagu kosa kata, dan pendampingan personal.",
+      id: "Program Kampung Inggris Unit dirancang khusus oleh mahasiswa KKN untuk menciptakan ekosistem belajar bahasa Inggris yang komunikatif, inklusif, dan menyenangkan di Kampung Candisari. Program ini mencakup modul pembelajaran yang disesuaikan dengan tingkat kemampuan anak-anak hingga remaja kampung, menggunakan pendekatan percakapan langsung, permainan edukatif, lagu kosa kata, dan pendampingan personal.",
       en: "The Kampung Inggris Unit program is specially designed by KKN students to create a communicative, inclusive, and fun English learning ecosystem in Candisari Village. This program includes learning modules tailored to the skill levels of children and village youth, utilizing direct conversation approaches, educational games, vocabulary songs, and personal mentoring.",
     },
     objectives: [
       {
-        id: "Meningkatkan kepercayaan diri anak-anak desa dalam berkomunikasi menggunakan bahasa Inggris.",
+        id: "Meningkatkan kepercayaan diri anak-anak kampung dalam berkomunikasi menggunakan bahasa Inggris.",
         en: "Boost village children's confidence in communicating using English.",
       },
       {
@@ -63,7 +63,7 @@ export const programs: Program[] = [
       en: "Primary KKN Program",
     },
     targetAudience: {
-      id: "Seluruh Warga & Pelajar Desa",
+      id: "Seluruh Warga & Pelajar Kampung",
       en: "All Village Residents & Students",
     },
   },
@@ -74,7 +74,7 @@ export const programs: Program[] = [
       en: "Women Farmer Group (KWT)",
     },
     description: {
-      id: "Pemberdayaan perempuan desa melalui pelatihan pertanian urban, budidaya sayuran organik, dan pengolahan hasil panen untuk meningkatkan ketahanan pangan dan pendapatan keluarga.",
+      id: "Pemberdayaan perempuan kampung melalui pelatihan pertanian urban, budidaya sayuran organik, dan pengolahan hasil panen untuk meningkatkan ketahanan pangan dan pendapatan keluarga.",
       en: "Empowering village women through urban farming training, organic vegetable cultivation, and post-harvest processing to improve food security and household income.",
     },
     longDescription: {
@@ -91,7 +91,7 @@ export const programs: Program[] = [
         en: "Provide training on diversifying food products using local ingredients.",
       },
       {
-        id: "Membentuk kelompok usaha mikro ibu-ibu desa yang berdaya dan terorganisir.",
+        id: "Membentuk kelompok usaha mikro ibu-ibu kampung yang berdaya dan terorganisir.",
         en: "Form organized and empowered micro-business groups among village women.",
       },
     ],
@@ -116,7 +116,7 @@ export const programs: Program[] = [
       en: "Women Empowerment Division",
     },
     targetAudience: {
-      id: "Ibu Rumah Tangga & Wanita Desa",
+      id: "Ibu Rumah Tangga & Wanita Kampung",
       en: "Housewives & Village Women",
     },
   },
@@ -127,16 +127,16 @@ export const programs: Program[] = [
       en: "Waste Bank & Clean Environment Program",
     },
     description: {
-      id: "Program pengelolaan sampah berbasis komunitas melalui pemilahan, pengumpulan, dan pendistribusian sampah daur ulang, disertai edukasi lingkungan bagi seluruh warga desa.",
+      id: "Program pengelolaan sampah berbasis komunitas melalui pemilahan, pengumpulan, dan pendistribusian sampah daur ulang, disertai edukasi lingkungan bagi seluruh warga kampung.",
       en: "Community-based waste management program through sorting, collecting, and distributing recyclable waste, along with environmental education for all village residents.",
     },
     longDescription: {
-      id: "Program Bank Sampah merupakan langkah strategis untuk menjaga kebersihan dan kelestarian lingkungan Desa Candisari. Melalui sistem tabungan sampah, warga diajak untuk memilah sampah organik dan anorganik dari rumah tangga. Sampah yang terkumpul disetorkan ke bank sampah desa dan dapat dikonversi menjadi tabungan bernilai ekonomis bagi warga.",
+      id: "Program Bank Sampah merupakan langkah strategis untuk menjaga kebersihan dan kelestarian lingkungan Kampung Candisari. Melalui sistem tabungan sampah, warga diajak untuk memilah sampah organik dan anorganik dari rumah tangga. Sampah yang terkumpul disetorkan ke bank sampah kampung dan dapat dikonversi menjadi tabungan bernilai ekonomis bagi warga.",
       en: "The Waste Bank program is a strategic step to maintain the cleanliness and environmental sustainability of Candisari Village. Through a waste savings system, residents are encouraged to sort organic and inorganic waste from households. Collected waste is deposited to the village waste bank and converted into economic savings for residents.",
     },
     objectives: [
       {
-        id: "Mengurangi volume penumpukan sampah liar di lingkungan desa.",
+        id: "Mengurangi volume penumpukan sampah liar di lingkungan kampung.",
         en: "Reduce the volume of illegal waste dumping in the village environment.",
       },
       {
@@ -169,7 +169,7 @@ export const programs: Program[] = [
       en: "Environment Division",
     },
     targetAudience: {
-      id: "Seluruh Warga Desa",
+      id: "Seluruh Warga Kampung",
       en: "All Village Residents",
     },
   },
@@ -180,11 +180,11 @@ export const programs: Program[] = [
       en: "Program GCU For Elderly",
     },
     description: {
-      id: "Program pelayanan dan pemeriksaan kesehatan berkala bagi para lansia di Dusun Candisari untuk memastikan kesejahteraan dan memantau kondisi kesehatan mereka.",
+      id: "Program pelayanan dan pemeriksaan kesehatan berkala bagi para lansia di Kampung Candisari untuk memastikan kesejahteraan dan memantau kondisi kesehatan mereka.",
       en: "Routine healthcare services and medical check-ups for the elderly in Candisari Hamlet to ensure their well-being and monitor health conditions.",
     },
     longDescription: {
-      id: "Program General Check-Up (GCU) Lansia diselenggarakan sebagai bentuk kepedulian terhadap kesehatan warga lanjut usia di Dusun Candisari. Kegiatan meliputi pemeriksaan tekanan darah, kadar gula darah, asam urat, serta konseling pola hidup sehat. Tim KKN bekerja sama dengan petugas posyandu lansia desa untuk memastikan layanan kesehatan terjangkau dan merata.",
+      id: "Program General Check-Up (GCU) Lansia diselenggarakan sebagai bentuk kepedulian terhadap kesehatan warga lanjut usia di Kampung Candisari. Kegiatan meliputi pemeriksaan tekanan darah, kadar gula darah, asam urat, serta konseling pola hidup sehat. Tim KKN bekerja sama dengan petugas posyandu lansia kampung untuk memastikan layanan kesehatan terjangkau dan merata.",
       en: "The Elderly General Check-Up (GCU) Program is organized as a form of care for senior citizens in Candisari Hamlet. Activities include measuring blood pressure, blood sugar, cholesterol, uric acid levels, and offering healthy lifestyle counseling. The KKN team collaborates with village elderly health post officers to ensure affordable and accessible healthcare.",
     },
     objectives: [
@@ -222,7 +222,7 @@ export const programs: Program[] = [
       en: "Health",
     },
     targetAudience: {
-      id: "Lansia Dusun Candisari",
+      id: "Lansia Kampung Candisari",
       en: "Elderly in Candisari Hamlet",
     },
   },

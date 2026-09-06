@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Pasar UMKM Desa Candisari | Marketplace Produk Lokal",
-  description: "Marketplace produk UMKM unggulan Desa Candisari. Temukan olahan jamur, batik tulis, kopi lereng, dan kerajinan bambu binaan KKN.",
+  title: "Pasar UMKM Kampung Candisari | Marketplace Produk Lokal",
+  description: "Marketplace produk UMKM unggulan Kampung Candisari. Temukan olahan jamur, batik tulis, kopi lereng, dan kerajinan bambu binaan KKN.",
 };
 
 export default function MarketplaceLayout({

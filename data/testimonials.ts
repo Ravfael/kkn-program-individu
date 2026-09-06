@@ -21,7 +21,7 @@ export const testimonials: Testimonial[] = [
       en: "Head of Village",
     },
     quote: {
-      id: "Kehadiran tim KKN dengan program Kampung Inggris membawa dampak positif yang nyata bagi anak-anak di desa kami. Mereka menjadi lebih percaya diri dan bersemangat belajar.",
+      id: "Kehadiran tim KKN dengan program Kampung Inggris membawa dampak positif yang nyata bagi anak-anak di kampung kami. Mereka menjadi lebih percaya diri dan bersemangat belajar.",
       en: "The arrival of the KKN team with the Kampung Inggris program brought a real positive impact for our village children. They have become far more confident and excited to learn.",
     },
     avatar: "https://picsum.photos/150/150?random=31",
@@ -55,7 +55,7 @@ export const testimonials: Testimonial[] = [
       en: "Youth Club Leader",
     },
     quote: {
-      id: "Pelatihan digital branding dan public speaking sangat membantu pemuda desa untuk mempromosikan potensi lokal ke luar daerah.",
+      id: "Pelatihan digital branding dan public speaking sangat membantu pemuda kampung untuk mempromosikan potensi lokal ke luar daerah.",
       en: "The digital branding and public speaking workshops immensely helped our village youth promote local business potential beyond our region.",
     },
     avatar: "https://picsum.photos/150/150?random=33",

@@ -1,7 +1,7 @@
 {
   "nav": {
     "brandName": "Kampung Inggris",
-    "subBrand": "Desa Wisata Edukasi KKN",
+    "subBrand": "Kampung Wisata Edukasi KKN",
     "home": "Beranda",
     "about": "Tentang",
     "programs": "Program",
@@ -13,14 +13,14 @@
   },
   "hero": {
     "ctaPrimary": "Jelajahi Program",
-    "ctaSecondary": "Profil Desa",
+    "ctaSecondary": "Profil Kampung",
     "slides": [
       {
         "eyebrow": "Lokasi Program Kerja",
         "title": "Selamat Datang di Kampung Candisari",
         "subtitle": "Membangun Kampung dari Ekonomi Kreatif serta mewujudkan generasi Kampung yang aktif, kompak, dan berkarakter.",
         "ctaPrimaryText": "Jelajahi Program",
-        "ctaSecondaryText": "Profil Desa"
+        "ctaSecondaryText": "Profil Kampung"
       },
       {
         "eyebrow": "METODE BELAJAR INTERAKTIF",
@@ -31,8 +31,8 @@
       },
       {
         "eyebrow": "INOVASI & PEMBERDAYAAN LOKAL",
-        "title": "Mendorong Potensi Ekonomi & Digitalisasi Desa",
-        "subtitle": "Kolaborasi mahasiswa dan pemuda desa dalam pengembangan branding media sosial, administrasi digital, dan UMKM lokal.",
+        "title": "Mendorong Potensi Ekonomi & Digitalisasi Kampung",
+        "subtitle": "Kolaborasi mahasiswa dan pemuda kampung dalam pengembangan branding media sosial, administrasi digital, dan UMKM lokal.",
         "ctaPrimaryText": "Hubungi Posko KKN",
         "ctaSecondaryText": "Jadwal Program"
       }
@@ -41,12 +41,12 @@
   "brandStory": {
     "readMore": "Baca Selengkapnya",
     "badgeTitle": "Pengabdian Masyarakat",
-    "badgeSub": "Kolaborasi Mahasiswa & Warga Desa"
+    "badgeSub": "Kolaborasi Mahasiswa & Warga Kampung"
   },
   "programsGrid": {
     "eyebrow": "PROGRAM KKN",
     "title": "Inisiatif & Program Kerja Unggulan",
-    "subtitle": "Rangkaian program pengabdian masyarakat yang dirancang secara komprehensif untuk meningkatkan literasi bahasa Inggris, kesehatan, dan potensi ekonomi digital warga desa.",
+    "subtitle": "Rangkaian program pengabdian masyarakat yang dirancang secara komprehensif untuk meningkatkan literasi bahasa Inggris, kesehatan, dan potensi ekonomi digital warga kampung.",
     "featuredBadge": "Program Utama",
     "applyCta": "Daftar Program",
     "detailCta": "Detail Program"
@@ -54,7 +54,7 @@
   "timeline": {
     "eyebrow": "PERJALANAN PROGRAM",
     "title": "Tahapan & Keberjalanan Program KKN",
-    "subtitle": "Perjalanan program pengabdian masyarakat dirancang secara terstruktur melalui 5 tahapan utama untuk menjamin keberlanjutan dampak positif bagi warga desa.",
+    "subtitle": "Perjalanan program pengabdian masyarakat dirancang secara terstruktur melalui 5 tahapan utama untuk menjamin keberlanjutan dampak positif bagi warga kampung.",
     "scrollHint": "Geser untuk melihat linimasa kegiatan",
     "statusCompleted": "Selesai",
     "statusInProgress": "Sedang Berjalan",
@@ -62,15 +62,15 @@
   },
   "newsSection": {
     "eyebrow": "KABAR TERBARU",
-    "title": "Berita & Dampak Kegiatan Desa",
-    "subtitle": "Ikuti perkembangan terbaru pelaksanaan program pengabdian KKN, dokumentasi belajar mengajar, serta cerita inspiratif dari warga desa.",
+    "title": "Berita & Dampak Kegiatan Kampung",
+    "subtitle": "Ikuti perkembangan terbaru pelaksanaan program pengabdian KKN, dokumentasi belajar mengajar, serta cerita inspiratif dari warga kampung.",
     "viewAll": "Lihat Semua Berita",
     "readStory": "Baca Cerita"
   },
   "gallery": {
     "eyebrow": "DOKUMENTASI",
-    "title": "Galeri Foto & Kegiatan Desa",
-    "subtitle": "Momen kebersamaan masyarakat desa, siswa Kampung Inggris, dan mahasiswa KKN yang terekam dalam berbagai aktivitas edukasi dan pengabdian.",
+    "title": "Galeri Foto & Kegiatan Kampung",
+    "subtitle": "Momen kebersamaan masyarakat kampung, siswa Kampung Inggris, dan mahasiswa KKN yang terekam dalam berbagai aktivitas edukasi dan pengabdian.",
     "viewAll": "Lihat Semua Foto"
   },
   "faqAccordion": {
@@ -84,7 +84,7 @@
   "contactSection": {
     "eyebrow": "HUBUNGI KAMI",
     "title": "Hubungi Kami & Kunjungi Posko KKN",
-    "subtitle": "Tim mahasiswa KKN dan pengurus posko desa siap melayani pertanyaan, pendaftaran kelas, maupun tawaran kemitraan program.",
+    "subtitle": "Tim mahasiswa KKN dan pengurus posko kampung siap melayani pertanyaan, pendaftaran kelas, maupun tawaran kemitraan program.",
     "addressTitle": "Alamat Posko",
     "phoneTitle": "Telepon / WhatsApp",
     "emailTitle": "Email Resmi",

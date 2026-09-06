@@ -11,11 +11,11 @@ export const faqItems: FaqItem[] = [
   {
     id: "faq-1",
     question: {
-      id: "Apa itu Program Desa Wisata Edukasi Kampung Inggris?",
+      id: "Apa itu Program Wisata Edukasi Kampung Inggris?",
       en: "What is the Kampung Inggris Educational Tourism Program?",
     },
     answer: {
-      id: "Program KKN ini merupakan inisiatif pengabdian mahasiswa bersama perangkat desa untuk menghadirkan pusat pembelajaran bahasa Inggris gratis, ramah anak, dan berbasis komunitas guna meningkatkan kualitas SDM desa.",
+      id: "Program KKN ini merupakan inisiatif pengabdian mahasiswa bersama perangkat kampung untuk menghadirkan pusat pembelajaran bahasa Inggris gratis, ramah anak, dan berbasis komunitas guna meningkatkan kualitas SDM kampung.",
       en: "This KKN initiative is a collaborative effort between university students and village leaders to provide free, community-based, child-friendly English learning hubs that empower local residents.",
     },
     category: {
@@ -30,7 +30,7 @@ export const faqItems: FaqItem[] = [
       en: "Who can participate in these learning programs?",
     },
     answer: {
-      id: "Seluruh warga desa dari berbagai jenjang usia terbuka untuk bergabung — mulai dari anak-anak SD, remaja SMP/SMA, pemuda karang taruna, hingga pelaku UMKM lokal.",
+      id: "Seluruh warga kampung dari berbagai jenjang usia terbuka untuk bergabung — mulai dari anak-anak SD, remaja SMP/SMA, pemuda karang taruna, hingga pelaku UMKM lokal.",
       en: "All village residents across all age groups are welcome to join — from elementary pupils, teenagers, youth club members, to local business owners.",
     },
     category: {
@@ -60,7 +60,7 @@ export const faqItems: FaqItem[] = [
       en: "How do I register and what is the class schedule?",
     },
     answer: {
-      id: "Pendaftaran dapat dilakukan langsung di Balai Desa atau melalui formulir kontak di situs ini. Kelas diadakan setiap sore hari (Senin, Rabu, dan Jumat) pukul 16.00 WIB di posko belajar desa.",
+      id: "Pendaftaran dapat dilakukan langsung di Balai Kampung atau melalui formulir kontak di situs ini. Kelas diadakan setiap sore hari (Senin, Rabu, dan Jumat) pukul 16.00 WIB di posko belajar kampung.",
       en: "Registration is available directly at the Village Hall or via our online contact section. Classes take place every weekday afternoon (Monday, Wednesday, and Friday at 16.00 PM WIB).",
     },
     category: {
@@ -75,7 +75,7 @@ export const faqItems: FaqItem[] = [
       en: "How long does the KKN program and class series last?",
     },
     answer: {
-      id: "Program intensif mahasiswa KKN berlangsung selama 1 bulan. Setelahnya, pengajaran akan dilanjutkan oleh kader muda desa yang telah dilatih secara mandiri.",
+      id: "Program intensif mahasiswa KKN berlangsung selama 1 bulan. Setelahnya, pengajaran akan dilanjutkan oleh kader muda kampung yang telah dilatih secara mandiri.",
       en: "The intensive student KKN program lasts for 1 month. Afterward, classes will be sustained independently by trained local youth cadres.",
     },
     category: {

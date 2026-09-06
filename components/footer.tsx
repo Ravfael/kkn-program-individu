@@ -26,7 +26,7 @@ export async function Footer({ locale = "id" }: { locale?: string }) {
               className="flex items-center gap-2.5 w-fit group focus:outline-hidden"
             >
               <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-xs overflow-hidden shrink-0">
-                <Image src="/images/village/logo.webp" alt="Logo Desa" width={40} height={40} className="w-full h-full object-contain p-0.5" />
+                <Image src="/images/village/logo.webp" alt="Logo Kampung" width={40} height={40} className="w-full h-full object-contain p-0.5" />
               </div>
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg sm:text-xl text-primary-navy leading-tight tracking-tight">
@@ -84,15 +84,17 @@ export async function Footer({ locale = "id" }: { locale?: string }) {
                   <span>{contact.phone}</span>
                 </a>
               </li>
-              <li>
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="flex items-center gap-2 hover:underline transition-all"
-                >
-                  <Mail className="w-4 h-4 shrink-0" />
-                  <span>{contact.email}</span>
-                </a>
-              </li>
+              {contact.email && (
+                <li>
+                  <a
+                    href={`mailto:${contact.email}`}
+                    className="flex items-center gap-2 hover:underline transition-all"
+                  >
+                    <Mail className="w-4 h-4 shrink-0" />
+                    <span>{contact.email}</span>
+                  </a>
+                </li>
+              )}
             </ul>
           </div>
 

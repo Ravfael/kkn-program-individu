@@ -57,7 +57,7 @@ function FigureCard({
               Pengabdian Masyarakat
             </p>
             <p className="text-[11px] text-text-muted mt-0.5">
-              Kolaborasi Mahasiswa &amp; Warga Desa
+              Kolaborasi Mahasiswa &amp; Warga Kampung
             </p>
           </div>
         </div>
@@ -131,7 +131,7 @@ export async function BrandStory({ locale = "id" }: { locale?: string }) {
             figure={figure}
             lang={lang}
             reverse={index % 2 !== 0}
-            showReadMore={index === figures.length - 1}
+            showReadMore={false}
             readMoreLabel={t("readMore")}
           />
         ))}

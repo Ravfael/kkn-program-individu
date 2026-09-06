@@ -32,7 +32,7 @@ export const umkmSellers: UMKMSeller[] = [
       en: "Fish Farm Manager",
     },
     description: {
-      id: "Penyedia ikan segar hasil budidaya kolam air tawar lokal Desa Candisari yang dirawat dengan pakan alami berkualitas.",
+      id: "Penyedia ikan segar hasil budidaya kolam air tawar lokal Kampung Candisari yang dirawat dengan pakan alami berkualitas.",
       en: "Provider of fresh freshwater fish cultivated locally in Candisari Village ponds with quality natural feed.",
     },
     whatsappNumber: "628156886035",
@@ -66,7 +66,7 @@ export const umkmSellers: UMKMSeller[] = [
       en: "Tiwul Artisan",
     },
     description: {
-      id: "Olahan tiwul olahan singkong khas desa yang gurih, manis alami, dan dibuat dengan resep warisan tradisional.",
+      id: "Olahan tiwul olahan singkong khas kampung yang gurih, manis alami, dan dibuat dengan resep warisan tradisional.",
       en: "Traditional cassava tiwul made with authentic heritage recipes, naturally sweet and savory.",
     },
     whatsappNumber: "6283121921880",
@@ -100,7 +100,7 @@ export const umkmSellers: UMKMSeller[] = [
       en: "Nora Computer Technician",
     },
     description: {
-      id: "Layanan perbaikan, maintenance, instalasi software, dan service laptop/komputer cepat dan terpercaya di Desa Candisari.",
+      id: "Layanan perbaikan, maintenance, instalasi software, dan service laptop/komputer cepat dan terpercaya di Kampung Candisari.",
       en: "Reliable computer & laptop repair, software installation, and IT maintenance services in Candisari Village.",
     },
     whatsappNumber: "628175482166",
@@ -134,7 +134,7 @@ export const products: Product[] = [
       en: "Fresh Fish Candisari Pond",
     },
     description: {
-      id: "Ikan segar langsung dari kolam budidaya warga Desa Candisari",
+      id: "Ikan segar langsung dari kolam budidaya warga Kampung Candisari",
       en: "Fresh fish harvested directly from Candisari Village ponds, healthy and high quality.",
     },
     image: "/images/umkm/kolamIkan.jpeg",
@@ -164,11 +164,11 @@ export const products: Product[] = [
     id: "prod-tiwul",
     umkmId: "umkm-tiwul",
     name: {
-      id: "Tiwul Tradisional Khas Desa",
+      id: "Tiwul Tradisional Khas Kampung",
       en: "Traditional Village Tiwul",
     },
     description: {
-      id: "Tiwul olahan singkong pilihan khas Desa Candisari yang nikmat",
+      id: "Tiwul olahan singkong pilihan khas Kampung Candisari yang nikmat",
       en: "Traditional cassava tiwul snack from Candisari Village, delicious and satisfying.",
     },
     image: "/images/umkm/tiwul.jpeg",
@@ -219,7 +219,7 @@ export const products: Product[] = [
       en: "Traditional Massage & Health Therapy",
     },
     description: {
-      id: "Layanan pijat tradisional dan terapi kebugaran badan di Desa Candisari",
+      id: "Layanan pijat tradisional dan terapi kebugaran badan di Kampung Candisari",
       en: "Traditional body massage and wellness therapy service in Candisari Village.",
     },
     image: "/images/umkm/pijet.jpg",
@@ -237,7 +237,7 @@ export function getWhatsAppOrderUrl(seller: UMKMSeller, product: Product, lang: 
   const message =
     lang === "en"
       ? `Hello ${seller.name.en}, I am interested in *${productName}* on Candisari Village UMKM Marketplace. Is it available? Thank you!`
-      : `Halo ${seller.name.id}, saya berminat dengan *${productName}* di Pasar UMKM Desa Candisari. Apakah masih tersedia/bisa dipesan? Terima kasih!`;
+      : `Halo ${seller.name.id}, saya berminat dengan *${productName}* di Pasar UMKM Kampung Candisari. Apakah masih tersedia/bisa dipesan? Terima kasih!`;
 
   return `https://wa.me/${seller.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }

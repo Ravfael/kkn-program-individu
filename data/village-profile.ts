@@ -6,7 +6,7 @@ export interface LocalizedString {
 export interface ContactInfo {
   address: LocalizedString;
   phone: string;
-  email: string;
+  email?: string;
   operatingHours: LocalizedString;
   whatsapp?: string;
 }
@@ -105,7 +105,7 @@ export const villageProfile: VillageProfile = {
         en: "Building the Hamlet Together",
       },
       paragraph: {
-        id: "Sebagai Ketua RT, saya sangat mendukung program Kampung Inggris yang diinisiasi oleh mahasiswa KKN. Kehadiran mereka membawa semangat baru bagi warga, khususnya generasi muda dusun kami, untuk belajar dan berkembang.",
+        id: "Sebagai Ketua RT, saya sangat mendukung program Kampung Inggris yang diinisiasi oleh mahasiswa KKN. Kehadiran mereka membawa semangat baru bagi warga, khususnya generasi muda kampung kita, untuk belajar dan berkembang.",
         en: "As the RT Leader, I fully support the Kampung Inggris program initiated by KKN students. Their presence brings a fresh spirit for residents, especially our young generation, to learn and grow.",
       },
       quote: {
@@ -151,18 +151,17 @@ export const villageProfile: VillageProfile = {
     },
   ],
   historyBrief: {
-    id: "Program KKN ini diinisiasi oleh mahasiswa universitas bersama perangkat desa setempat untuk memperkuat potensi edukasi masyarakat.",
+    id: "Program KKN ini diinisiasi oleh mahasiswa universitas bersama perangkat kampung setempat untuk memperkuat potensi edukasi masyarakat.",
     en: "This KKN initiative was established by university students and village leaders to enhance local community educational potential.",
   },
   locationMapUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.839250119056!2d110.4146773793457!3d-7.7003939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f03a1100719%3A0x3b7d2aeea44fea86!2sBank%20Sampah%20Candisari!5e0!3m2!1sen!2sid!4v1788703285204!5m2!1sen!2sid",
   contact: {
     address: {
-      id: "Dusun Candisari, Desa Sardonoharjo, Kec. Ngaglik, Kab. Sleman, D.I. Yogyakarta",
+      id: "Kampung Candisari, Desa Sardonoharjo, Kec. Ngaglik, Kab. Sleman, D.I. Yogyakarta",
       en: "Candisari Hamlet, Sardonoharjo Village, Ngaglik District, Sleman Regency, Special Region of Yogyakarta",
     },
     phone: "+62 815-6886-035",
-    email: "info@desakampunginggris.id",
     operatingHours: {
       id: "Senin - Sabtu: 08.00 - 16.00 WIB",
       en: "Monday - Saturday: 08:00 AM - 04:00 PM WIB",

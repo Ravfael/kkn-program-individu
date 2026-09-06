@@ -54,7 +54,7 @@ export function Navbar() {
         {/* Brand Logo & Name */}
         <Link href="/#hero" className="flex items-center gap-2.5 group focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary-blue rounded-md">
           <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform duration-200 overflow-hidden shrink-0 border border-gray-100">
-            <Image src="/images/village/logo.webp" alt="Logo Desa" width={40} height={40} className="w-full h-full object-contain p-0.5" />
+            <Image src="/images/village/logo.webp" alt="Logo Kampung" width={40} height={40} className="w-full h-full object-contain p-0.5" />
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-lg sm:text-xl text-primary-navy leading-tight tracking-tight flex items-center gap-1.5">{t("brandName")}</span>
@@ -126,7 +126,7 @@ export function Navbar() {
                 <SheetHeader className="p-0 pb-6 text-left border-b border-gray-100">
                   <SheetTitle className="flex items-center gap-2 text-primary-navy font-bold text-lg">
                     <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center shadow-xs overflow-hidden shrink-0 border border-gray-100">
-                      <Image src="/images/village/logo.webp" alt="Logo Desa" width={32} height={32} className="w-full h-full object-contain p-0.5" />
+                      <Image src="/images/village/logo.webp" alt="Logo Kampung" width={32} height={32} className="w-full h-full object-contain p-0.5" />
                     </div>
                     <span>{t("brandName")}</span>
                   </SheetTitle>
