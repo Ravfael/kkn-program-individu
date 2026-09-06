@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { GraduationCap, MapPin, Phone, Mail, Globe, MessageCircle, Share2 } from "lucide-react";
+import { MapPin, Phone, Mail, Globe, MessageCircle, Share2 } from "lucide-react";
 import { villageProfile } from "@/data/village-profile";
 
 export async function Footer({ locale = "id" }: { locale?: string }) {

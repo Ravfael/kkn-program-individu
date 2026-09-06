@@ -1,7 +1,5 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight } from "lucide-react";
-import { Link } from "@/i18n/routing";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { newsItems } from "@/data/news";
 import { NewsCard } from "@/components/news-card";

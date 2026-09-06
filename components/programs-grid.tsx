@@ -1,13 +1,8 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, Star, Users, CheckCircle2 } from "lucide-react";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { programs } from "@/data/programs";
 import { villageProfile } from "@/data/village-profile";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { ProgramCard } from "./program-card";
 import { ProgramFeaturedCard } from "./program-featured-card";
 

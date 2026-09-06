@@ -1,9 +1,8 @@
 import React from "react";
-import Metadata from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { ArrowLeft, Tag, User, Share2, Sparkles } from "lucide-react";
+import { ArrowLeft, Tag, User, Sparkles } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { newsItems } from "@/data/news";
 import Navbar from "@/components/navbar";
