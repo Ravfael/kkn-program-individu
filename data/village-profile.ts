@@ -122,6 +122,33 @@ export const villageProfile: VillageProfile = {
       },
       photo: "/images/village/rt06.jpeg",
     },
+    {
+      eyebrow: {
+        id: "SAMBUTAN KETUA RT",
+        en: "RT LEADER WELCOME",
+      },
+      heading: {
+        id: "Terima Kasih Mahasiswa KKN",
+        en: "Thank You, KKN Students",
+      },
+      paragraph: {
+        id: "Atas nama seluruh pengurus kampung dan warga, saya menyampaikan terima kasih kepada adik-adik mahasiswa KKN. Kehadiran kalian selama satu bulan telah memberikan dampak dan semangat positif bagi kampung kita melalui berbagai program kerja yang bermanfaat.",
+        en: "On behalf of all village officials and residents, I extend my deepest gratitude to the KKN students. Your one-month presence has brought positive impact and spirit to our hamlet through various beneficial programs.",
+      },
+      quote: {
+        id: "Berbagai program mulai dari pemeriksaan kesehatan, penyuluhan, bimbingan belajar anak-anak di TPA, hingga pendampingan UMKM telah terlaksana dengan baik dan meninggalkan kesan mendalam bagi warga.",
+        en: "Various programs ranging from health checkups, community outreach, children's tutoring at TPA, to MSME mentoring have been well-executed and left a lasting impression on our residents.",
+      },
+      authorName: {
+        id: "Ketua RT 07",
+        en: "RT 07 Leader",
+      },
+      authorTitle: {
+        id: "Ketua RT 07, Kampung Candisari",
+        en: "RT 07 Leader, Candisari Hamlet",
+      },
+      photo: "/images/village/rt07.jpeg",
+    },
   ],
   historyBrief: {
     id: "Program KKN ini diinisiasi oleh mahasiswa universitas bersama perangkat desa setempat untuk memperkuat potensi edukasi masyarakat.",
