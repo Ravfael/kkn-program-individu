@@ -60,8 +60,8 @@ export const faqItems: FaqItem[] = [
       en: "How do I register and what is the class schedule?",
     },
     answer: {
-      id: "Pendaftaran dapat dilakukan langsung di Balai Desa atau melalui formulir kontak di situs ini. Kelas diadakan setiap sore hari (Senin–Jumat pukul 15.30 WIB) di posko belajar desa.",
-      en: "Registration is available directly at the Village Hall or via our online contact section. Classes take place every weekday afternoon (Monday–Friday at 3:30 PM WIB).",
+      id: "Pendaftaran dapat dilakukan langsung di Balai Desa atau melalui formulir kontak di situs ini. Kelas diadakan setiap sore hari (Senin, Rabu, dan Jumat) pukul 16.00 WIB di posko belajar desa.",
+      en: "Registration is available directly at the Village Hall or via our online contact section. Classes take place every weekday afternoon (Monday, Wednesday, and Friday at 16.00 PM WIB).",
     },
     category: {
       id: "Pendaftaran",
@@ -75,8 +75,8 @@ export const faqItems: FaqItem[] = [
       en: "How long does the KKN program and class series last?",
     },
     answer: {
-      id: "Program intensif mahasiswa KKN berlangsung selama 6 minggu. Setelahnya, pengajaran akan dilanjutkan oleh kader muda desa yang telah dilatih secara mandiri.",
-      en: "The intensive student KKN program lasts 6 weeks. Afterward, classes will be sustained independently by trained local youth cadres.",
+      id: "Program intensif mahasiswa KKN berlangsung selama 1 bulan. Setelahnya, pengajaran akan dilanjutkan oleh kader muda desa yang telah dilatih secara mandiri.",
+      en: "The intensive student KKN program lasts for 1 month. Afterward, classes will be sustained independently by trained local youth cadres.",
     },
     category: {
       id: "Durasi",

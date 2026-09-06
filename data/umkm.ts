@@ -106,6 +106,23 @@ export const umkmSellers: UMKMSeller[] = [
     whatsappNumber: "628175482166",
     logo: "/images/umkm/nora_computer.jpeg",
   },
+  {
+    id: "umkm-pijat",
+    name: {
+      id: "Jasa Pijat Tradisional Candisari",
+      en: "Candisari Traditional Massage Service",
+    },
+    ownerName: {
+      id: "Terapis Pijat Candisari",
+      en: "Candisari Massage Therapist",
+    },
+    description: {
+      id: "Layanan pijat tradisional dan kebugaran tubuh untuk meredakan pegal-pegal serta memulihkan kesegaran kesehatan.",
+      en: "Traditional massage and body therapy service to relieve fatigue and restore physical wellness.",
+    },
+    whatsappNumber: "6287738020944",
+    logo: "/images/umkm/pijet.jpg",
+  },
 ];
 
 export const products: Product[] = [
@@ -189,6 +206,23 @@ export const products: Product[] = [
       en: "Laptop/PC repair, hardware cleaning, and IT consultation service.",
     },
     image: "/images/umkm/nora_computer.jpeg",
+    category: {
+      id: "Jasa & Layanan",
+      en: "Services & Repair",
+    },
+  },
+  {
+    id: "prod-pijat",
+    umkmId: "umkm-pijat",
+    name: {
+      id: "Jasa Pijat & Terapi Kesehatan",
+      en: "Traditional Massage & Health Therapy",
+    },
+    description: {
+      id: "Layanan pijat tradisional dan terapi kebugaran badan di Desa Candisari",
+      en: "Traditional body massage and wellness therapy service in Candisari Village.",
+    },
+    image: "/images/umkm/pijet.jpg",
     category: {
       id: "Jasa & Layanan",
       en: "Services & Repair",

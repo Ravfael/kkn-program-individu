@@ -162,7 +162,7 @@ export const programs: Program[] = [
         en: "Plastic & Paper Recycling Handicraft Workshop",
       },
     ],
-    image: "/images/programs/bankSampah.jpg",
+    image: "/images/programs/bankSampah.jpeg",
     featured: false,
     category: {
       id: "Divisi Lingkungan",

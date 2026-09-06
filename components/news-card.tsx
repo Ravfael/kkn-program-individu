@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Calendar, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import type { NewsItem } from "@/data/news";
 
@@ -40,12 +40,6 @@ export function NewsCard({
 
         {/* Card Body */}
         <div className="p-6 flex flex-col gap-3">
-          {/* Date Metadata */}
-          <div className="flex items-center gap-1.5 text-xs font-semibold text-text-muted">
-            <Calendar className="w-3.5 h-3.5 text-primary-blue" />
-            <span>{item.date[lang]}</span>
-          </div>
-
           {/* Title */}
           <h3 className="text-xl font-bold text-primary-navy group-hover:text-primary-blue transition-colors leading-snug">
             {item.title[lang]}

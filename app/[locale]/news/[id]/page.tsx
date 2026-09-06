@@ -3,7 +3,7 @@ import Metadata from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { Calendar, ArrowLeft, Tag, User, Share2, Sparkles } from "lucide-react";
+import { ArrowLeft, Tag, User, Share2, Sparkles } from "lucide-react";
 import { Link } from "@/i18n/routing";
 import { newsItems } from "@/data/news";
 import Navbar from "@/components/navbar";
@@ -112,10 +112,7 @@ export default async function NewsDetailPage({
                 <Tag className="w-3.5 h-3.5" />
                 {news.category[lang]}
               </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-text-muted">
-                <Calendar className="w-3.5 h-3.5 text-primary-blue" />
-                {news.date[lang]}
-              </span>
+
               <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-text-muted">
                 <User className="w-3.5 h-3.5 text-primary-blue" />
                 {lang === "en" ? "KKN Student Team" : "Tim Mahasiswa KKN"}

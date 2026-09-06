@@ -4,7 +4,7 @@ import { Store, MessageCircle, ArrowLeft, Heart } from "lucide-react";
 import { villageProfile } from "@/data/village-profile";
 
 export function MarketplaceFooter() {
-  const categories = ["Makanan & Camilan", "Pakaian & Batik", "Minuman & Kopi", "Kerajinan"];
+  const categories = ["Perikanan & Pangan", "Makanan & Camilan", "Jasa & Layanan"];
 
   const waNumber = villageProfile.contact.whatsapp?.replace(/[^0-9]/g, "") || "6281234567890";
   const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent("Halo Tim Posko KKN Desa Candisari, saya ingin bertanya mengenai program pembinaan Pasar UMKM.")}`;

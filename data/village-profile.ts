@@ -122,56 +122,29 @@ export const villageProfile: VillageProfile = {
       },
       photo: "/images/village/rt06.jpeg",
     },
-    {
-      eyebrow: {
-        id: "SAMBUTAN KETUA RT",
-        en: "RT LEADER WELCOME",
-      },
-      heading: {
-        id: "Sinergi Warga & Mahasiswa",
-        en: "Synergy of Residents & Students",
-      },
-      paragraph: {
-        id: "Program KKN ini adalah contoh nyata bagaimana kolaborasi antara mahasiswa dan warga desa mampu menciptakan perubahan positif yang nyata. Kami sangat mengapresiasi dedikasi para mahasiswa dalam membantu warga kami.",
-        en: "This KKN program is a real example of how collaboration between students and village residents can create tangible positive change. We greatly appreciate the dedication of the students in helping our community.",
-      },
-      quote: {
-        id: "Kehadiran mahasiswa KKN benar-benar membawa angin segar. Warga kami jadi lebih semangat dan dusun kami pun semakin dikenal.",
-        en: "The presence of KKN students truly brought a fresh breeze. Our residents are more enthusiastic and our hamlet is increasingly well-known.",
-      },
-      authorName: {
-        id: "Bpk. [Nama RT 02]",
-        en: "Mr. [RT 02 Name]",
-      },
-      authorTitle: {
-        id: "Ketua RT 07, Kampung Candisari",
-        en: "RT 07 Leader, Candisari Hamlet",
-      },
-      photo: "https://picsum.photos/600/750?random=107",
-    },
   ],
   historyBrief: {
     id: "Program KKN ini diinisiasi oleh mahasiswa universitas bersama perangkat desa setempat untuk memperkuat potensi edukasi masyarakat.",
     en: "This KKN initiative was established by university students and village leaders to enhance local community educational potential.",
   },
   locationMapUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.956622434318!2d110.3647!3d-7.7956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDcnNDQuMiJTIDExMMKwMjEnNTIuOSJF!5e0!3m2!1sid!2sid!4v1700000000000",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.839250119056!2d110.4146773793457!3d-7.7003939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5f03a1100719%3A0x3b7d2aeea44fea86!2sBank%20Sampah%20Candisari!5e0!3m2!1sen!2sid!4v1788703285204!5m2!1sen!2sid",
   contact: {
     address: {
-      id: "Jl. Dahlia No. 12, Pare, Kediri, Jawa Timur 64212",
-      en: "Dahlia Street No. 12, Pare, Kediri, East Java 64212",
+      id: "Dusun Candisari, Desa Sardonoharjo, Kec. Ngaglik, Kab. Sleman, D.I. Yogyakarta",
+      en: "Candisari Hamlet, Sardonoharjo Village, Ngaglik District, Sleman Regency, Special Region of Yogyakarta",
     },
-    phone: "+62 812-3456-7890",
+    phone: "+62 815-6886-035",
     email: "info@desakampunginggris.id",
     operatingHours: {
       id: "Senin - Sabtu: 08.00 - 16.00 WIB",
       en: "Monday - Saturday: 08:00 AM - 04:00 PM WIB",
     },
-    whatsapp: "https://wa.me/6281234567890",
+    whatsapp: "https://wa.me/628156886035",
   },
   socials: [
     { platform: "Instagram", url: "https://instagram.com" },
     { platform: "YouTube", url: "https://youtube.com" },
-    { platform: "WhatsApp", url: "https://wa.me/6281234567890" },
+    { platform: "WhatsApp", url: "https://wa.me/628156886035" },
   ],
 };
